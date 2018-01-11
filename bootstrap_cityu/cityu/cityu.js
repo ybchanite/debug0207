@@ -338,6 +338,7 @@ if (jQuery('#block-researchhome-bar').length){
     jQuery('#block-researchhome-bar > div').addClass('container');
 }
 
+/*
 if (jQuery('#block-researchhomeinfographic').length){
     jQuery(window).scroll(function() {
             var windowPos = window.pageYOffset;
@@ -351,6 +352,7 @@ if (jQuery('#block-researchhomeinfographic').length){
 
     });
 }
+*/
 
 
 
