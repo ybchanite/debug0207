@@ -1,0 +1,43 @@
+<div class="prog_title">
+<div class="prog_title_eng">{{ label }}</div>
+<div class="prog_title_chi">{{ node.field_prog_title_chi.value }}</div>
+</div>
+
+
+
+<div class="prog_general_info">
+<table>
+<tbody>
+	<tr>
+		<td><span class="prog_label">{{ node.field_admit_year.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ node.field_admit_year.value }}</span></td>
+	</tr>
+	<tr>
+		<td><span class="prog_label">{{ node.field_mode_of_fund.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_mode_of_fund[0]['#markup'] }}</span></td>
+	</tr>
+	<tr>
+		<td><span class="prog_label">{{ node.field_mode_of_study.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_mode_of_study[0]['#markup'] }}</span></td>
+	</tr>
+	<tr>
+		<td><span class="prog_label">{{ node.field_class_schedule.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ node.field_class_schedule.value }}</span></td>
+	</tr>
+	<tr>
+		<td><span class="prog_label">{{ node.field_intake_quota.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ node.field_intake_quota.value }}</span></td>
+	</tr>
+	<tr>
+		<td><span class="prog_label">{{ node.field_min_credit_req.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ node.field_min_credit_req.value }}</span></td>
+	</tr>
+	<tr>
+		<td><span class="prog_label">{{ node.field_duration.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ node.field_duration.value }}</span></td>
+	</tr>
+	<tr>
+		<td><span class="prog_label">{{ node.field_url_website.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_url_website[0] }}</span> </td>
+	</tr>
+</tbody>
+</table>
+ 
+ 
+ 
+</div>
+
+
+<div class="prog_outline">{{ content.field_outline }}</div>
