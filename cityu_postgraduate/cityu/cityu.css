@@ -695,7 +695,7 @@ a:focus, a:hover{
 #block-cityu-sgs-header-logo{
     display: inline-block;
     vertical-align: middle;
-    width: 150px;
+    width: 125px;
     padding: 15px 0;
 }
 
@@ -730,7 +730,7 @@ a:focus, a:hover{
 /*header right*/
 
 .main-header.container > aside.col-sm-2{
-        top: 0;
+    top: 0;
     position: absolute;
     right: 0;
     width: 100%;
