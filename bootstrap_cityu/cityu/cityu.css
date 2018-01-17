@@ -5118,7 +5118,7 @@ a.research_areas_school_website{
 
 
 
-#block-views-block-taught-faq-block-block-1 #edit-submit-taught-faq-block{
+#block-views-block-taught-faq-block-block-1 .form-submit{
     color: #fff;
     background-color: #863d75;
     border-color: #863d75;
@@ -5133,8 +5133,8 @@ a.research_areas_school_website{
 }
 
 
-#block-views-block-taught-faq-block-block-1 #edit-submit-taught-faq-block:hover, 
-#block-views-block-taught-faq-block-block-1 #edit-submit-taught-faq-block:focus {
+#block-views-block-taught-faq-block-block-1 .form-submit:hover, 
+#block-views-block-taught-faq-block-block-1 .form-submit:focus {
     background: #bbcc03;
 }
 
