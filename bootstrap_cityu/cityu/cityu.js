@@ -1000,34 +1000,6 @@ jQuery('.view-programme-search #edit-field-prog-title-value').attr("placeholder"
 /*****/
 
 
-function sortedResult(){
-    
-    var qapp = jQuery('#edit-field-faq-role-target-id option:selected').text();
-    var qcat = jQuery('#edit-field-faq-category-target-id-1 option:selected').text();
-//     var qlang = jQuery('#edit-field-faq-language-target-id option:selected').text();
-
-    jQuery('.view-taught-faq-01 .views-row').hide();
-    jQuery('.view-empty').hide();
-    jQuery('#block-views-block-taught-faq-01-block-1').show();
-
-
-    /*to get the instant sorted result*/
-    jQuery('#block-views-block-taught-faq-01-block-1 .views-row').each(function(){
-        var aapp = jQuery.trim(jQuery(this).find('.views-field-field-faq-role .field-content').text());
-        var acat = jQuery.trim(jQuery(this).find('.views-field-field-faq-category .field-content').text());
-//         var alang = jQuery.trim(jQuery(this).find('.views-field-field-faq-language .field-content').text());
-        
-        if(aapp === qapp && acat === qcat){
-            jQuery(this).show();
-        }
-        else{
-            jQuery(this).hide();
-        }
-    });
-    
-}
-
-
 /*select condition
     
   Local Application : Category A ~ G
@@ -1038,85 +1010,12 @@ function sortedResult(){
 function localCategory(){
     var applicantValue = jQuery("#edit-field-faq-role-target-id option:selected").val();
     if (applicantValue === '419'){
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(8)').hide();
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(9)').hide();
+        jQuery('#edit-field-faq-category-target-id option:nth-child(8)').hide();
+        jQuery('#edit-field-faq-category-target-id option:nth-child(9)').hide();
 
     }else{
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(8)').show();
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(9)').show();
-    }
-
-}
-
-jQuery(document).ready(function(){
-    sortedResult();
-    //Local Application : Category A ~ G
-    localCategory();
-    
-});
-
-jQuery('#edit-field-faq-role-target-id, #edit-field-faq-category-target-id-1, #edit-field-faq-language-target-id').change(function(){
-    sortedResult();
-});
-
-
-jQuery("#edit-field-faq-role-target-id").change(function(){
-    localCategory();
-});
-
-
-jQuery('.view-taught-faq-01 .form-group').attr('id', 'faqAnchor');
-
-var originAction = jQuery('#views-exposed-form-taught-faq-01-page-1').attr('action');
-var newAction = originAction + '#faqAnchor';
-jQuery('#views-exposed-form-taught-faq-01-page-1').attr('action', newAction);
-
-
-
-jQuery('.view-taught-faq-01 #edit-combine').attr("placeholder", "Insert Your Keywords");
-
-jQuery('.views-field-field-faq-question').click(function(){
-    if (jQuery(this).siblings('.view-taught-faq-01 .views-field-body').css('display') === 'none'){
-        jQuery(this).find('.field-content > div:nth-child(1)').css('background-color','#863275');
-        jQuery(this).find('.view_taught_faq_plus').html("<i class='fa fa-minus' aria-hidden='true'></i>");
-    }
-    else{
-        jQuery(this).find('.field-content > div:nth-child(1)').css('background-color','#aaa4ad');
-        jQuery(this).find('.view_taught_faq_plus').html("<i class='fa fa-plus' aria-hidden='true'></i>");
-        
-    }
-    jQuery(this).siblings('.view-taught-faq-01 .views-field-body').toggle('fast');
-            
- });
-
-
-
-jQuery( '.view-taught-faq-01 #edit-submit-taught-faq-01').empty();
-jQuery( '.view-taught-faq-01 #edit-submit-taught-faq-01').addClass('glyphicon glyphicon-search');
-
-
-
-/*****/
-/*faq2*/
-/*****/
-
-
-/*select condition
-    
-  Local Application : Category A ~ G
-
- */
-
-
-function localCategory(){
-    var applicantValue = jQuery("#edit-field-faq-role-target-id option:selected").val();
-    if (applicantValue === '419'){
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(8)').hide();
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(9)').hide();
-
-    }else{
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(8)').show();
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(9)').show();
+        jQuery('#edit-field-faq-category-target-id option:nth-child(8)').show();
+        jQuery('#edit-field-faq-category-target-id option:nth-child(9)').show();
     }
 
 }
@@ -1129,7 +1028,7 @@ jQuery("#edit-field-faq-role-target-id").change(function(){
 jQuery('##block-views-block-taught-faq-block-block-1 #edit-combine').attr("placeholder", "Insert Your Keywords");
 
 jQuery('.views-field-field-faq-question').click(function(){
-    if (jQuery(this).siblings('#block-views-block-taught-faq-block-block-1 .views-field-body').css('display') === 'none'){
+    if (jQuery(this).siblings('.views-field-body').css('display') === 'none'){
         jQuery(this).find('.field-content > div:nth-child(1)').css('background-color','#863275');
         jQuery(this).find('.view_taught_faq_plus').html("<i class='fa fa-minus' aria-hidden='true'></i>");
     }
@@ -1138,7 +1037,7 @@ jQuery('.views-field-field-faq-question').click(function(){
         jQuery(this).find('.view_taught_faq_plus').html("<i class='fa fa-plus' aria-hidden='true'></i>");
         
     }
-    jQuery(this).siblings('#block-views-block-taught-faq-block-block-1 .views-field-body').toggle('fast');
+    jQuery(this).siblings('.views-field-body').toggle('fast');
             
  });
 
