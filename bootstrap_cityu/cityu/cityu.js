@@ -1015,7 +1015,7 @@ function sortedResult(){
         var aapp = jQuery.trim(jQuery(this).find('.views-field-field-faq-role .field-content').text());
         var acat = jQuery.trim(jQuery(this).find('.views-field-field-faq-category .field-content').text());
         
-        if(aapp === qapp && acat === qcat){
+        if((aapp === qapp && acat === qcat) || (qapp === '- Any -' && acat === qcat) || (aapp === qapp && qcat === '- Any -')){
             jQuery(this).show();
         }
         else{
