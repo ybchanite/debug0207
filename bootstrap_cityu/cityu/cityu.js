@@ -1004,18 +1004,16 @@ function sortedResult(){
     
     var qapp = jQuery('#edit-field-faq-role-target-id option:selected').text();
     var qcat = jQuery('#edit-field-faq-category-target-id-1 option:selected').text();
-//     var qlang = jQuery('#edit-field-faq-language-target-id option:selected').text();
 
     jQuery('.view-taught-faq-01 .views-row').hide();
-    jQuery('.view-empty').hide();
-    jQuery('#block-views-block-taught-faq-01-block-1').show();
+    //jQuery('.view-empty').hide();
+    //jQuery('#block-views-block-taught-faq-01-block-1').show();
 
 
     /*to get the instant sorted result*/
-    jQuery('#block-views-block-taught-faq-01-block-1 .views-row').each(function(){
+    jQuery('.view-taught-faq-01 .views-row').each(function(){
         var aapp = jQuery.trim(jQuery(this).find('.views-field-field-faq-role .field-content').text());
         var acat = jQuery.trim(jQuery(this).find('.views-field-field-faq-category .field-content').text());
-//         var alang = jQuery.trim(jQuery(this).find('.views-field-field-faq-language .field-content').text());
         
         if(aapp === qapp && acat === qcat){
             jQuery(this).show();
@@ -1038,12 +1036,12 @@ function sortedResult(){
 function localCategory(){
     var applicantValue = jQuery("#edit-field-faq-role-target-id option:selected").val();
     if (applicantValue === '419'){
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(8)').hide();
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(9)').hide();
+        jQuery('#edit-field-faq-category-target-id-1 option[value="428"]').hide();
+        jQuery('#edit-field-faq-category-target-id-1 option[value="429"]').hide();
 
     }else{
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(8)').show();
-        jQuery('#edit-field-faq-category-target-id-1 option:nth-child(9)').show();
+        jQuery('#edit-field-faq-category-target-id-1 option[value="428"]').show();
+        jQuery('#edit-field-faq-category-target-id-1 option[value="429"]').show();
     }
 
 }
@@ -1055,7 +1053,7 @@ jQuery(document).ready(function(){
     
 });
 
-jQuery('#edit-field-faq-role-target-id, #edit-field-faq-category-target-id-1, #edit-field-faq-language-target-id').change(function(){
+jQuery('#edit-field-faq-role-target-id, #edit-field-faq-category-target-id-1').change(function(){
     sortedResult();
 });
 
