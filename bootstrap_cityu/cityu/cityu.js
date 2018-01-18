@@ -1043,8 +1043,8 @@ jQuery('#block-views-block-taught-faq-block-block-1 .views-field-field-faq-quest
 
 
 
-jQuery( '#block-views-block-taught-faq-block-block-1 .form-actions').empty();
-jQuery( '#block-views-block-taught-faq-block-block-1 .form-actions').addClass('fa fa-search');
+jQuery( '#block-views-block-taught-faq-block-block-1 .form-submit').empty();
+jQuery( '#block-views-block-taught-faq-block-block-1 .form-submit').addClass('fa fa-search');
 
 
 /**********************/
