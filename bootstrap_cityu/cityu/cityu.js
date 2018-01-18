@@ -1005,7 +1005,7 @@ function sortedResult(){
     var qapp = jQuery('#edit-field-faq-role-target-id option:selected').text();
     var qcat = jQuery('#edit-field-faq-category-target-id-1 option:selected').text();
 
-    jQuery('.view-taught-faq-01 .views-row').hide();
+    //jQuery('.view-taught-faq-01 .views-row').hide();
     //jQuery('.view-empty').hide();
     //jQuery('#block-views-block-taught-faq-01-block-1').show();
 
