@@ -26,13 +26,13 @@ jQuery('#expandButton').click(function(){
 
     if (expandAllButton === 0){
         jQuery('.view-taught-faq-01 .views-field-field-faq-question .view_taught_faq').css('background-color','#863275');
-        jQuery('.view-taught-faq-01 .views-field-field-faq-question .view_taught_faq_plus').text("-");
+        jQuery('.view-taught-faq-01 .views-field-field-faq-question .view_taught_faq_plus').html("<i class='fa fa-minus' aria-hidden='true'></i>");
         jQuery('.view-taught-faq-01 .views-field-body').show('fast');
         expandAllButton = 1;
     }
     else{
         jQuery('.view-taught-faq-01 .views-field-field-faq-question .view_taught_faq').css('background-color','#aaa4ad');
-        jQuery('.view-taught-faq-01 .views-field-field-faq-question .view_taught_faq_plus').text("+");
+        jQuery('.view-taught-faq-01 .views-field-field-faq-question .view_taught_faq_plus').html("<i class='fa fa-plus' aria-hidden='true'></i>");
         jQuery('.view-taught-faq-01 .views-field-body').hide('fast');
         expandAllButton = 0;
         
