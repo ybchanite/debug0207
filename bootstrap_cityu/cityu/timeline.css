@@ -533,6 +533,7 @@ li.timeline-item.odd .field-content.at-step{
     li.timeline-item.odd .views-field-field-at-name{
         top : 16px;
         left: 22px;
+	right: auto;
     }
     
     li.timeline-item.even .views-field-field-at-name{
