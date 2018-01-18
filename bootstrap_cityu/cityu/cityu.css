@@ -699,6 +699,7 @@ a:focus, a:hover{
     top: 0;
     right: 0;
     position: absolute;
+    z-index: 10;
 }
 
 .region-header-right{
@@ -2432,12 +2433,12 @@ ul.action-links{
     #block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2),
     #block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
         width: 95%;
-        padding-bottom: 5%;
+        padding: 2% 0 5% 5%;
     }
     
     #block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1), 
     #block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
-        width: 100%;	
+        display: none;	
     }
 }
 
