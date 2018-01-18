@@ -10,16 +10,13 @@ var lang = jQuery('html').attr('lang');
 
 switch (lang) {
     case 'en':
-        jQuery('<a id="expandButton">Expand All</span>').insertAfter("#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-language-target-id");
+        jQuery('<a id="expandButton">Expand All</span>').insertAfter("#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-category-target-id-1");
         break;
     case 'zh-hant':
-        jQuery('<a id="expandButton">展開全部</span>').insertAfter("#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-language-target-id");
-        break;
-    case 'zh-hans':
-        jQuery('<a id="expandButton">展开全部</span>').insertAfter("#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-language-target-id");
+        jQuery('<a id="expandButton">展開全部</span>').insertAfter("#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-category-target-id-1");
         break;
     default:
-        jQuery('<a id="expandButton">Expand All</span>').insertAfter("#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-language-target-id");
+        jQuery('<a id="expandButton">Expand All</span>').insertAfter("#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-category-target-id-1");
         break;
 }
 
