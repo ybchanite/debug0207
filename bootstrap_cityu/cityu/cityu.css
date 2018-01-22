@@ -1005,7 +1005,7 @@ a:focus, a:hover{
 
 
 #block-mainnavigation-2 .dropdown-menu li{
-    width: auto;
+    width: 100%;
     text-align: left;
     max-width: none;
     
@@ -1060,7 +1060,7 @@ a:focus, a:hover{
 
 
 
-#block-mainnavigation-2 > ul > li.active > a:hover{
+#block-mainnavigation-2 > ul > li.active > a:hover, #block-mainnavigation-2 > ul > li.active > a:active{
     background-color: #f5f5f5;
 }
 
