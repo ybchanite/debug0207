@@ -973,7 +973,6 @@ a:focus, a:hover{
     
 }
 
-
 #block-mainnavigation-2 > ul > li > a:hover{
     background-color: #fff;
 }
@@ -1020,6 +1019,7 @@ a:focus, a:hover{
     border-right: none;
     border-top: none;
     border-bottom:  7px solid #863275;
+    border-radious: 0;
 
 }
 .dropdown-menu>li>a{
@@ -1053,12 +1053,9 @@ a:focus, a:hover{
 
 
 /*active link*/
-#block-mainnavigation-2 > ul > li.active{
+#block-mainnavigation-2 > ul > li.active, #block-mainnavigation-2 > ul > li.active >a{
     background-color: #f5f5f5; 
 }
-
-
-
 
 #block-mainnavigation-2 > ul > li.active > a:hover, #block-mainnavigation-2 > ul > li.active > a:active{
     background-color: #f5f5f5;
