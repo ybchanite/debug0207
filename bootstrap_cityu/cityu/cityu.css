@@ -1019,7 +1019,7 @@ a:focus, a:hover{
     border-right: none;
     border-top: none;
     border-bottom:  7px solid #863275;
-    border-radious: 0;
+    border-radius: 0;
 
 }
 .dropdown-menu>li>a{
@@ -2144,6 +2144,65 @@ ul.action-links{
 }
 
 
+/***********/
+/*why cityu 2*/
+/***********/
+
+#page_content-60{
+    margin-top: 50px;
+}
+
+#page_content-60 > div{
+    margin-bottom: 10px;
+}
+
+#page_content-60 > div > .paragraph > .paragraph__column > div{
+    padding: 0 10px 0 5px;
+}
+
+#page_content-60 img, #page_content-60 img{
+    width: 100%;
+    height: 100%!important;
+}
+
+.aboutcityu_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,.5);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.aboutcityu_overlay:hover{
+    opacity: 1;
+}
+
+.aboutcityu_overlay i.fa-search{
+    position: absolute;
+    top: 40%;
+    font-size: 50px;
+    color: white;
+    left: 45%;
+}
+#page_content-60 img[alt="Mobile Map"]{
+    display: none;
+}
+
+@media(max-width: 767px){
+    #page_content-60 img[alt="Desktop Map"]{
+        display: none;
+    }
+    #page_content-60 img[alt="Mobile Map"]{
+        display: block;
+    }
+}
+
+
 /*********************************/
 /*Student and Alumni Achievements*/
 /*********************************/
@@ -2518,6 +2577,7 @@ ul.action-links{
 	    text-align: justify;
 	    font-size: 16px;
 	    line-height: 1.5;
+	    padding: 0 25px;
 	}
 }
 
@@ -2678,14 +2738,28 @@ ul.action-links{
 
 /*hover effect with javascript*/
 
-#block-researchhomeresearchers .field--name-bp-text a{
-/*    background-color: #863d75;
+.view-researchhome-4researchers-random .view-footer{
+    text-align: center;
+}
+
+.view-researchhome-4researchers-random .view-footer a{
     color: #ffffff;
-    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    font-weight: 400;
     font-size: 18px;
-    text-decoration: none;*/
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: #863275;
+    color: #fff;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    font-family: Raleway, sans-serif;
+}
 
-
+.view-researchhome-4researchers-random .view-footer a:hover{
+    background: #bbcc03;
+}
+#block-researchhomeresearchers .field--name-bp-text a{
     color: #ffffff;
     text-decoration: none;
     font-weight: 400;
@@ -2981,26 +3055,16 @@ a.research_areas_school_website{
     
 }
 
+.entrance_block_even{
+    background-color: #f3f3f3;
+    
+}
+
 .entrance_block:nth-child(even){
     background-color: #f3f3f3;
     
 }
-/*
-.landing_research_entrance_min_require{
-    background-color: #F1F2F2;
-    padding: 2% 9%;
-    margin-bottom: 5%;
-    font-size: 16px;
-    color: #58595B;
-}
 
-.landing_research_entrance_eng_require{
-    background-color: #f3f3f3;
-    padding: 2% 9%;
-    font-size: 16px;
-    color: #58595B;
-    padding-bottom: 2%;
-}*/
 
 #block-views-block-research-entrance-eng-p-require-block-1{
     background-color: #F1F2F2;
@@ -3190,7 +3254,7 @@ a.research_areas_school_website{
 /*    background-color: #f0e9f1;*/
     padding: 2% 4%;
     
-    
+    display: block;
     overflow-y: scroll;
     border: 1px solid #ececec;
     max-height: 500px;
@@ -3555,6 +3619,9 @@ a.research_areas_school_website{
 }
 
 @media(max-width: 767px){
+    #block-doctoratehome-introduction .field--name-bp-text{
+        padding: 25px;
+    }
     #block-doctoratehome-introduction .field--name-bp-text p{
         text-align: justify;
     }
@@ -3665,6 +3732,9 @@ a.research_areas_school_website{
 
 
 @media (max-width: 767px){
+    #block-taughthome-introduction .field--name-bp-text{
+        padding: 25px;
+    }
     #block-views-block-taught-home-blocks-block-1 .view-taught-home-blocks .views-col{
         width: 100%!important;
     }
