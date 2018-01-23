@@ -1330,8 +1330,13 @@ a:focus, a:hover{
 /*********************************/
 #block-testfortoi{
     text-align: center;
+    padding-top: 30px;
+    position: relative;
 }
 
+#block-testfortoi .container.paragraph{
+    display: inline-block;
+}
 
 #block-testfortoi .paragraph--type--bp-columns__3col{
     opacity: 0;
@@ -1346,10 +1351,13 @@ a:focus, a:hover{
 #block-testfortoi .para_background img{
     position: absolute;
     width: 70%;
-    max-height: 380px;
+    
     z-index: -100;
     left: 15%;
-    top: 20%;
+    /*top: 20%;
+    max-height: 380px;*/
+    top: 0;
+    max-height: 400px;
 }
     
 #block-testfortoi .field--name-field-text-demo a{
@@ -1367,30 +1375,14 @@ a:focus, a:hover{
 }
 
 #block-testfortoi .field--name-field-title{
-/*     position: absolute; */
     color: #48193f;
     font-size: 100px;
     font-weight: 500;
-/*     left: 50%;
-    transform: translate(-50%,-50%); */
 }
 
 #block-testfortoi .field--name-field-title .field--name-field-title::after{
     content: '\00Bth';
 }
-
-
-/* #block-testfortoi .paragraph--type--bp-columns__3col:nth-child(1) .field--name-field-title{
-    top: 37%;
-}
-
-#block-testfortoi .paragraph--type--bp-columns__3col:nth-child(2) .field--name-field-title{
-    top: 49%;
-}
-
-#block-testfortoi .paragraph--type--bp-columns__3col:nth-child(3) .field--name-field-title{
-    top: 37%;
-} */
 
 
 #block-testfortoi .field--name-field-text-demo{
@@ -1536,7 +1528,7 @@ a:focus, a:hover{
 
 #block-frontpage-3circles-colleges{
     text-align: center;
-/*    margin-top: 7%;*/
+    display: relative;
 }
 
 #block-frontpage-3circles-bar > div > div > div{
@@ -1562,7 +1554,9 @@ a:focus, a:hover{
     visibility: hidden;
 }
 
-
+#block-frontpage-3circles-colleges .container.paragraph{
+    display: inline-block;
+}
 
 
 #block-frontpage-3circles-colleges .paragraph--type--bp-columns__3col:nth-child(1){
@@ -1611,20 +1605,6 @@ a:focus, a:hover{
 
     }
 }
-
-/*@media (min-width: 1900px){ 
-    #block-frontpage-3circles-colleges .field--name-field-toi{ 
-        margin-left: 36%;
-    } 
-}
-
-@media (max-width: 1199px){ 
-    #block-frontpage-3circles-colleges .field--name-field-toi{ 
-        margin-left: 26%;
-        bottom: 26%;
-    } 
-}
-*/
 @media (max-width: 991px){ 
     #block-frontpage-3circles-colleges .field--name-field-toi{ 
         font-size: 20px;
@@ -1638,36 +1618,21 @@ a:focus, a:hover{
     }
     
     #block-frontpage-3circles-colleges .field--name-field-toi{ 
-/*        margin-left: 0;
-        bottom: 28%;
-        font-size: 25px;
-        width: 100%;
-        padding: 0 35%;*/
         font-size: 25px;
 
     } 
     
 }
-/*
-@media (max-width: 448px){ 
-
-    
-    #block-frontpage-3circles-colleges .field--name-field-toi{ 
-        padding: 0 25%;
-
-    } 
-    
-}*/
 
 
 /*news & events block*/
-#page_content-1141 .content > div{
+#block-frontpagenewsevents-2 < div{
     text-align: center;
 }
 
 #block-frontpagenewsevents-2{
     margin: 0 2%;
-	display: inline-block;
+    display: inline-block;
 }
 
 #block-frontpagenewsevents-2 .field--name-bp-text h1{
