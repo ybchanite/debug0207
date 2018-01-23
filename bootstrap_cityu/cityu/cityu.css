@@ -2152,11 +2152,11 @@ ul.action-links{
     margin-top: 50px;
 }
 
-#page_content-60 > div{
+.why_cityu_paragraph{
     margin-bottom: 10px;
 }
 
-#page_content-60 .why_cityu_paragraph > .paragraph__column > div{
+#page_content-60 .why_cityu_paragraph > .paragraph__column > div, #page_content-60 .why_cityu_paragraph > div{
     padding: 0 10px 0 5px;
 }
 
