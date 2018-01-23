@@ -219,14 +219,14 @@ jQuery( "#block-frontpagenewsevents-2 .field--name-field-toi" ).each(function() 
 
 
 
-/*************/
-/*about cityu*/
-/*************/
+/***********/
+/*Why cityu*/
+/***********/
 
 /*Overlay effect*/
 
-jQuery('#block-aboutcityu .paragraph__column > a').each(function(){
-    jQuery(this).prepend('<div class="aboutcityu_overlay"><i class="fa fa-search" aria-hidden="true"></i></div>');
+jQuery('#page_content-60 .why_cityu_paragraph .paragraph__column > a').each(function(){
+    jQuery(this).prepend('<div class="whycityu_overlay"><i class="fa fa-search" aria-hidden="true"></i></div>');
 });
 
 
