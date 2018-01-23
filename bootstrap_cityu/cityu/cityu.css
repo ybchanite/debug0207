@@ -2565,7 +2565,7 @@ ul.action-links{
 @media (max-width: 1899px){
 
     #page_content-254 > .content > div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1),
-    #page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){{
+    #page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
         padding-left: 5%;
         width: 49%;
     }
