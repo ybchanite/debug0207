@@ -1528,7 +1528,7 @@ a:focus, a:hover{
 
 #block-frontpage-3circles-colleges{
     text-align: center;
-    display: relative;
+    position: relative;
 }
 
 #block-frontpage-3circles-bar > div > div > div{
@@ -1631,17 +1631,18 @@ a:focus, a:hover{
 }
 
 #block-frontpagenewsevents-2{
-    margin: 0 2%;
+    text-align: center;
+    margin-top: 12%;
+}
+
+#block-frontpagenewsevents-2 h1{
+    margin-bottom: 5%;
+
+}
+#block-frontpagenewsevents-2 > div{
     display: inline-block;
 }
 
-#block-frontpagenewsevents-2 .field--name-bp-text h1{
-    margin-top: 15%;
-    margin-bottom: 5%;
-/*    font-size: 40px;
-    color: #863275;*/
-    text-align: center;
-}
 #block-frontpagenewsevents-2 .field--name-field-toi {
     color: #727171;
     font-size: 21px;
