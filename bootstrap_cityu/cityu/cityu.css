@@ -2200,6 +2200,14 @@ ul.action-links{
     #page_content-60 img[alt="Mobile Map"]{
         display: block;
     }
+	
+    #page_content-60 .why_cityu_paragraph > .paragraph__column > div, #page_content-60 .why_cityu_paragraph > div{
+	padding: 0;
+    }
+	
+    #page_content-60 img{
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -2499,7 +2507,109 @@ ul.action-links{
 }
 
 
+/*************************/
+/*facilities and supports:2*/
+/*************************/
 
+#page_content-254 > .content > div:nth-child(odd){
+    background-color: #F0E9F1;
+}
+
+#page_content-254 > .content > div:nth-child(even){
+    background-color: #F1F2F2;
+}
+
+#page_content-254 p{
+    text-align: justify;
+}
+
+
+/*image block*/
+
+#page_content-254 > .content > div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
+    width: 40%;
+    float: right;
+    padding: 0;
+}
+
+/* #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(1){ */
+#page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
+    width: 40%;
+    float: left;
+    padding: 0;
+}
+
+
+/*content block*/
+
+/* #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(odd) .paragraph--type--bp-columns__2col:nth-child(2){ */
+#page_content-254 > .content > div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
+    width: 59%;
+    padding: 2% 0 2% 5%;
+}
+
+/* #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(2){ */
+#page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
+    width: 59%;
+    padding: 2% 5% 2% 0;  
+}
+
+
+#page_content-254 a:hover {
+    color: #863275;
+}
+
+#page_content-254 h2 a{
+    text-decoration: none;
+/*    color: #58595B;*/
+}
+
+#page_content-254 p{
+    font-size: 15px;
+    color: #58595B;
+}
+
+
+@media (max-width: 1899px){
+
+/*  #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(odd) .paragraph--type--bp-columns__2col:nth-child(2){ */
+	#page_content-254 > .content > div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
+        padding-left: 5%;
+        width: 49%;
+    }
+    
+/*  #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(2){	*/
+	#page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
+        padding-right: 5%;      
+        width: 49%;
+    }
+}
+
+@media (max-width: 1199px){
+    #page_content-254 h2{
+        font-size: 20px;
+    }
+/*  #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(odd) .paragraph--type--bp-columns__2col:nth-child(1),
+    #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(1){	*/
+	#page_content-254 > .content > div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1),
+	#page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+	
+    #page_content-254 > .content > div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2),
+    #page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
+        width: 95%;
+        padding: 2% 0 5% 5%;
+    }
+    
+    #page_content-254 > .content > div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1), 
+    #page_content-254 > .content > div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
+        display: none;	
+    }
+}
 
 
 
@@ -2515,14 +2625,6 @@ ul.action-links{
 #block-banner-research-degree .paragraph > .paragraph__column{
     padding: 0;
 }
-
-
-
-
-
-
-
-
 
 /*introduction*/
 
