@@ -1317,8 +1317,14 @@ a:focus, a:hover{
     #block-frontpageaboutcityu .right.carousel-control{
         right: -5%;	
     }
-    #block-frontpageaboutcityu > div:nth-child(1){
+    #block-frontpageaboutcityu > div:nth-child{
         padding: 3%;	
+    }
+    #block-frontpageaboutcityu .field--name-bp-text a{
+	margin-bottom: 0;
+    }
+    #block-frontpageaboutcityu{
+        padding: 0;	
     }
     
 }
@@ -1632,14 +1638,13 @@ a:focus, a:hover{
 
 #block-frontpagenewsevents-2{
     text-align: center;
-    margin-top: 12%;
 }
 
 #block-frontpagenewsevents-2 h1{
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 
 }
-#block-frontpagenewsevents-2 > div{
+#block-frontpagenewsevents-2 > div:nth-child(2){
     display: inline-block;
 }
 
@@ -4837,7 +4842,83 @@ a.research_areas_school_website{
     }
 
 }
+/**************/
+/*Diverse Area: 2*/
+/**************/
 
+
+
+
+#page_content-259{
+    margin: 3% 0;
+    text-align: center;
+}
+
+#page_content-259 #diverse_area_blocks > div{
+    display: inline-block;
+}
+
+
+#page_content-259 .field--name-field-toi{
+    position: absolute;
+    top: 30%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 1.8;
+    text-align: center;
+    padding: 0 1em;
+}
+
+#diverse_area_blocks .paragraph--type--bp-columns__7col:nth-child(3) .field--name-field-toi{
+    padding: 0 0.5em;
+}
+
+#diverse_area_blocks .paragraph--type--bp-columns__7col:nth-child(6) .field--name-field-toi{
+    padding: 0 0em;
+}
+
+#diverse_area_blocks .field--name-bp-image-field img{
+    max-width: 159px!important;
+    width: 100%;
+}
+
+.daImg{
+    transition: .3s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.daContainer:hover .daImg{
+    opacity: 0.3;
+}
+
+.daContainer:hover .daLink{
+    color: #863d75;
+    text-shadow: 0px 0px 0px #000000;
+    text-decoration: none;
+}
+
+
+
+.daLink, .daLink:focus{
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #000000;
+    text-decoration: none;
+}
+
+@media(min-width: 1900px){
+    #diverse_area_blocks .field--name-field-toi{
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width: 1199px){
+    #diverse_area_blocks .paragraph--type--bp-columns__7col{
+        width: 14.285714285714%;
+    }
+
+}
 /************************/
 /*Financial Aid and Fees*/
 /************************/
