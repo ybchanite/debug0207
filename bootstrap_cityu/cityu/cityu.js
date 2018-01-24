@@ -786,7 +786,7 @@ jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
 /*styling*/
 
 
-jQuery('.cwm_content < div < .content').addClass('container').addClass('content_with_menu');
+jQuery('.cwm_content').parents('.content').addClass('container').addClass('content_with_menu');
 
 
 
