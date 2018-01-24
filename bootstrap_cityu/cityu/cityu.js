@@ -785,17 +785,19 @@ jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
 
 /*styling*/
 
-jQuery('.paragraph--type--contents-with-menu .field--name-field-caption, .paragraph--type--contents-with-menu .field--name-field-body').wrapAll('<div class="content_with_menu col-sm-12"/>')
 
-jQuery('.paragraph--type--contents-with-menu .field--name-field-caption').wrap('<div class="col-sm-2"/>');
+jQuery('#page_content-294, #page_content-21').addClass('container').addClass('content_with_menu');
 
-jQuery('.paragraph--type--contents-with-menu .field--name-field-body').wrap('<div class="col-sm-10"/>');
-
-
-jQuery('.paragraph--type--contents-with-menu .content_with_menu ').prepend('<i class="fa fa-caret-down collapse_caret" aria-hidden="true"></i>');
-	
+jQuery('#page_content-294, #page_content-21').prepend('<i class="fa fa-caret-down collapse_caret" aria-hidden="true"></i><div class="menu col-sm-2"></div>');
+/*	
 jQuery('.collapse_caret').click(function(){
 	jQuery('.content_with_menu .col-sm-2').slideToggle('fast');
+});
+*/
+
+jQuery('.col-sm-10 .menu_index').each(function(){
+    jQuery('.menu.col-sm-2').append(jQuery(this).html());
+
 });
 
 
@@ -803,28 +805,28 @@ jQuery('.collapse_caret').click(function(){
 
 /*menu*/
 
-if(jQuery('.paragraph--type--contents-with-menu').length){
-    jQuery('.paragraph--type--contents-with-menu .field--name-field-caption p:first-child').addClass('activeTimelineIndex');
+if(jQuery('.menu.col-sm-2').length){
+    jQuery('.menu.col-sm-2 p:first-child').addClass('activeTimelineIndex');
 }
 
-jQuery('#block-visitingresearchstudents .paragraph--type--contents-with-menu .field--name-field-caption p, #block-visitingpostgraduatestudents .paragraph--type--contents-with-menu .field--name-field-caption p').click(function(){
-    jQuery('.paragraph--type--contents-with-menu .field--name-field-caption p').not(jQuery(this)).removeClass('activeTimelineIndex');
+jQuery('.menu.col-sm-2 p').click(function(){
+    jQuery('.menu.col-sm-2 p').not(jQuery(this)).removeClass('activeTimelineIndex');
     jQuery(this).addClass('activeTimelineIndex');
    
 });
 
-jQuery('.paragraph--type--contents-with-menu .field--name-field-caption p').not(jQuery('#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .field--name-field-caption p')).click(function(){
+jQuery('.menu.col-sm-2 p').not(jQuery('#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .field--name-field-caption p')).click(function(){
 
         
         
-        var index = jQuery(".paragraph--type--contents-with-menu .field--name-field-caption p").index(jQuery(this)) + 1;
+        var index = jQuery(".menu.col-sm-2 p").index(jQuery(this)) + 1;
         
-        var target = jQuery(".paragraph--type--contents-with-menu .field--name-field-body .field--item:nth-child(" + index + ")");
+        var target = jQuery(".content_with_menu .col-sm-10 > div:nth-child(" + index + ")");
         
-        
-        jQuery('.paragraph--type--contents-with-menu .field--name-field-body .field--item').css('display','none');
-        target.css('display','block');
-	
+        if (target.find('.item_body').length){
+            jQuery('.content_with_menu .col-sm-10 > div').css('display','none');
+            target.css('display','block');
+	}
 	if (!(jQuery('.collapse_caret').css('display') === 'none')){
 		jQuery('.content_with_menu .col-sm-2').slideUp('fast');
 	}
