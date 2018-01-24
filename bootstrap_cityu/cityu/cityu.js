@@ -750,7 +750,7 @@ jQuery('#block-taughtdiversearea .field--name-field-text-demo a').click(function
 
 /*hover effect*/
 jQuery( "#diverse_area_blocks .paragraph--type--bp-columns__7col" ).addClass( "daContainer" );
-jQuery( "#diverse_area_blocks .field--name-field-toi a" ).addClass( "daLink" );
+jQuery( "#diverse_area_blocks .field--name-field-toi" ).addClass( "daLink" );
 jQuery( "#diverse_area_blocks .field--name-bp-image-field img" ).addClass( "daImg" );
 
 
@@ -770,8 +770,7 @@ jQuery( "#diverse_area_blocks .field--name-bp-image-field img" ).addClass( "daIm
 
 jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
     /*store the index of the college/school*/
-    var index = jQuery("#block-taughtdiversearea .daContainer").index(jQuery(this).parents('.daContainer')) + 1;
-    //localStorage.targetCollegeSchool = index;
+    var index = jQuery("#diverse_area_blocks .daContainer").index(jQuery(this).parents('.daContainer')) + 1;
     jQuery(this).attr('href', jQuery(this).attr('href') + "#" + index);
     
 });
