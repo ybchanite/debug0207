@@ -743,7 +743,42 @@ jQuery('#block-taughtdiversearea .field--name-field-text-demo a').click(function
 });
 
     
-   
+  
+
+
+
+
+/*hover effect*/
+jQuery( "#diverse_area_blocks .paragraph--type--bp-columns__7col" ).addClass( "daContainer" );
+jQuery( "#diverse_area_blocks .field--name-field-toi a" ).addClass( "daLink" );
+jQuery( "#diverse_area_blocks .field--name-bp-image-field img" ).addClass( "daImg" );
+
+
+/*glbal variable for redirection to program list page*/
+
+
+/*
+    This index mechanism is based on the order of the list item and the content block.
+    ie. The user select the 2nd college/school, then it wil redirect to the 2nd table of program list.
+
+    Therfore, please be careful when modifying the items at diverse areas and program list.
+    
+    The list item is recognized as <p>.
+    The description block is recognized as <div> inside class "col-sm-10".
+    
+*/
+
+jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
+    /*store the index of the college/school*/
+    var index = jQuery("#block-taughtdiversearea .daContainer").index(jQuery(this).parents('.daContainer')) + 1;
+    //localStorage.targetCollegeSchool = index;
+    jQuery(this).attr('href', jQuery(this).attr('href') + "#" + index);
+    
+});
+
+
+
+
 
 /**********/
 /*visiting*/
