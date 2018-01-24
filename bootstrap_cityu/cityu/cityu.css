@@ -3999,19 +3999,6 @@ a.research_areas_school_website{
     cursor: pointer;
 }
 
-
-
-.paragraph--type--contents-with-menu .field--name-field-title{
-    text-transform: uppercase;
-    font-size: 40px;
-    position: relative;
-    margin-bottom: 40px;
-    color: #863275;
-    text-align: center;
-    font-family: Raleway,sans-serif;
-    font-weight: 400;
-}
-
 .content_with_menu .col-sm-2 {
     background-color: #F1F2F2;
     padding: 0;
@@ -4024,8 +4011,7 @@ a.research_areas_school_website{
 
 }
 
-#block-visitingresearchstudents .content_with_menu .col-sm-2  p:hover, 
-#block-visitingpostgraduatestudents .content_with_menu .col-sm-2  p:hover{
+.content_with_menu .col-sm-2  p:hover{
     color: #ffffff;
     background-color: #9a7894;
 }
@@ -4039,24 +4025,24 @@ a.research_areas_school_website{
     line-height: 2;
 }
 
-.content_with_menu .col-sm-10 .field--item:nth-child(1){
+.content_with_menu .col-sm-10 > div:nth-child(1){
     display: block;
 }
 
-.content_with_menu .col-sm-10 .field--item{
+.content_with_menu .col-sm-10 > div{
     display: none;
     text-align: justify;
 }
 
 
-.content_with_menu .col-sm-10 .field--item table{
+.content_with_menu .col-sm-10  > div table{
     background-color: #f1f2f2;
     width: 100%;
     text-align: left;
 }
 
 
-.content_with_menu .col-sm-10 .field--item table th{
+.content_with_menu .col-sm-10  > div table th{
     background-color: #58585A;
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -4064,7 +4050,7 @@ a.research_areas_school_website{
     padding: 5px 0;
 }
 
-.content_with_menu .col-sm-10 .field--item table td{
+.content_with_menu .col-sm-10  > div table td{
 
     vertical-align: top;
     padding: 1% 3%;
