@@ -786,9 +786,12 @@ jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
 /*styling*/
 
 
-jQuery('#page_content-294, #page_content-21').addClass('container').addClass('content_with_menu');
+jQuery('.cwm_content < div < .content').addClass('container').addClass('content_with_menu');
 
-jQuery('#page_content-294, #page_content-21').prepend('<i class="fa fa-caret-down collapse_caret" aria-hidden="true"></i><div class="menu col-sm-2"></div>');
+
+
+jQuery('<i class="fa fa-caret-down collapse_caret" aria-hidden="true"></i><div class="menu col-sm-2"></div>').insertBefore(jQuery('.cwm_content'));
+
 /*	
 jQuery('.collapse_caret').click(function(){
 	jQuery('.content_with_menu .col-sm-2').slideToggle('fast');
