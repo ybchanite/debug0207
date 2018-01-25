@@ -7,11 +7,18 @@
 
 /*important date*/
 
+.important_date{
+    display: block;
+}
+
+
 .important_date table{
     
     width: 100%;
     font-size: 15px;
     text-align: center;
+
+    display:block;
     
 }
 
@@ -54,7 +61,11 @@ hr{
 
 }
 
-
+@media (max-width: 767px){
+    .important_date table{
+        overflow-x: scroll;
+    }
+}
 
 /**********/
 /*timeline*/
@@ -305,7 +316,8 @@ ul.timeline-list.alternate li.timeline-item.even .timeline-item-wrapper{
 #block-views-block-taught-atimeline-block-2 .views-row .views-field .field-content:before{
     content: counter(timelineIndexCounter) ". ";
     position: absolute;
-    left: 1em;
+    /*left: 1em;*/
+    left: 25px;
 
 }
 #block-views-block-research-atimeline-block-2 .views-field-field-at-step .field-content, #block-views-block-doctorate-atimeline-block-2 .views-field-field-at-step .field-content,
