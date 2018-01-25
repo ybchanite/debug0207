@@ -2456,6 +2456,7 @@ ul.action-links{
 #block-researchhomeinfographic{
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #block-researchhomeinfographic .paragraph--type--bp-columns__3col{
@@ -2549,9 +2550,13 @@ ul.action-links{
 #block-researchhomeresearchers{
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 3%;
+    margin: 30px 0;
     display: inline-block;
 	
+}
+
+#block-researchhomeresearchers h1{
+    margin-bottom: 50px;
 }
 
 #block-researchhomeresearchers .field--name-field-text-demo strong{
@@ -2662,6 +2667,7 @@ ul.action-links{
 .profileContainer {
     position: relative;
     width: 65%;
+    display: inline-block;
 }
 
 .profileImage {
