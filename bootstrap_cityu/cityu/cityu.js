@@ -783,6 +783,10 @@ jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
 /*visiting*/
 /**********/
 
+/*****/
+/*phd*/
+/*****/
+
 /*styling*/
 
 
@@ -1339,7 +1343,7 @@ if(jQuery('#block-views-block-news-events-events-block-1').length || jQuery('#bl
 
 /*hover effect*/
 
-jQuery('#block-views-block-news-events-public-lecture-block-1 .views-row .views-field-body p').each(function() {
+/*jQuery('#block-views-block-news-events-public-lecture-block-1 .views-row .views-field-body p').each(function() {
 
     var title = jQuery(this).html();
     jQuery(jQuery(this).parents('.views-field-body').siblings('.views-field-field-image').find('img')).wrap( '<div class="newsContainer"></div>' );
@@ -1347,6 +1351,18 @@ jQuery('#block-views-block-news-events-public-lecture-block-1 .views-row .views-
 
     var plLink = jQuery(this).find('a').attr('href');
     jQuery(jQuery(this).parents('.views-field-body').siblings('.views-field-field-image')).wrap( '<a href ="'+ plLink + '"></div>' );
+    
+
+});*/
+
+
+jQuery( "#block-views-block-news-events-public-lecture-block-1 .field--name-field-toi" ).each(function() {
+
+    var title = jQuery(this).text();
+    jQuery(jQuery(this).siblings('.field--name-bp-image-field').find('img')).wrap( '<div class="newsContainer"></div>' );
+    jQuery('<div class="titleContainer"><div class="titleLink"> ' + title + ' </div></div>').insertAfter(jQuery(this).siblings('.field--name-bp-image-field').find('img'));
+
+
     
 
 });
@@ -1357,28 +1373,19 @@ jQuery('#block-views-block-news-events-public-lecture-block-1 .views-row .views-
 /*phd*/
 /*****/
 
+/*
 jQuery('#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .field--name-field-caption p:not(:nth-child(14)):not(:nth-child(17))').click(function(){
     jQuery('#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .field--name-field-caption p').not(jQuery(this)).removeClass('activeTimelineIndex');
     jQuery(this).addClass('activeTimelineIndex');
    
 });
 
-/*
-    This index list mechanism is based on the order of the list item and the content block.
-    ie. The user select the 2nd item of the select list, then the 2nd description block will be shown.
-
-    Therfore, please be careful when modifying either the list items and the content blocks.
-    
-    The list item is recognized as <p>.
-    The description block is recognized as <div> inside class "col-sm-10".
-    
-*/
 
 
 jQuery('#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .col-sm-2 p:nth-child(-n+13):not(:nth-child(12))').click(function(){
 
         var index = jQuery("#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .col-sm-2 p").index(jQuery(this)) + 1;
-        /*For exceptional case as the 12th list item is a hyperlink with no corresponding description block*/
+	
         if (index === 13) { index--;}
 
 	jQuery('#block-researchphdfellowshipscheme201718 .col-sm-10 .field--item').css('display','none');
@@ -1400,7 +1407,7 @@ jQuery('#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with
         
 });
 
-
+*/
 
 
 
