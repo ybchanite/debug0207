@@ -799,7 +799,7 @@ jQuery('.collapse_caret').click(function(){
 
 jQuery('.col-sm-10 .menu_index').each(function(){
     if (!(jQuery(this).siblings('.item_body').length)){
-    	jQuery(this).child('p').addClass('noHover');
+    	jQuery(this).children('p').addClass('noHover');
     }
 		
     jQuery('.menu.col-sm-2').append(jQuery(this).html());
