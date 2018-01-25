@@ -1259,8 +1259,7 @@ a:focus, a:hover{
 
     /*margin: 0 12%;
     margin-top: 20px;*/
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin: 20px 0 20px 10px;
 	
     color: #fff;
     text-decoration: none;
@@ -1320,11 +1319,8 @@ a:focus, a:hover{
     #block-frontpageaboutcityu > div:nth-child{
         padding: 3%;	
     }
-    #block-frontpageaboutcityu .field--name-bp-text a{
-	margin-bottom: 0;
-    }
     #block-frontpageaboutcityu{
-        padding: 0;	
+        padding: 3%;	
     }
     
 }
@@ -1638,6 +1634,7 @@ a:focus, a:hover{
 
 #block-frontpagenewsevents-2{
     text-align: center;
+    margin-top: 10%;
 }
 
 #block-frontpagenewsevents-2 h1{
@@ -4452,7 +4449,6 @@ a.research_areas_school_website{
 
 
 #public_lecture_intro{
-    padding: 1%;
     margin-bottom: 5%;
     text-align: justify;
         
@@ -4465,8 +4461,9 @@ a.research_areas_school_website{
     
 }
 
-#block-views-block-news-events-public-lecture-block-1 > div{
-    padding: 0;
+#block-views-block-news-events-public-lecture-block-1 > div >div{
+    display: inline-block;
+    width: auto;
 }
 #block-views-block-news-events-public-lecture-block-1 img{
     display: inline-block;
