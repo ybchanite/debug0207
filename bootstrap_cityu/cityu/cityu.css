@@ -702,6 +702,11 @@ a:focus, a:hover{
     z-index: 10;
 }
 
+body.user-logged-in .main-header.container > aside.col-sm-2{
+    position: relative;
+}
+
+
 .region-header-right{
     text-align: right;
     font-size: 14px;
@@ -1034,6 +1039,7 @@ a:focus, a:hover{
     background-color: #ffffff;
     padding: 10px;
     min-width: 100%;
+    margin: 0;
 }
 
 #block-mainnavigation-2 .dropdown-menu > li > a{
@@ -1251,6 +1257,7 @@ a:focus, a:hover{
     color: white;
     text-align: justify;
     font-size: 16px;
+    margin-bottom: 10px;
     
 }
 
@@ -1764,8 +1771,9 @@ a:focus, a:hover{
 }
 
 
-
+/*********************/
 /*frontpage animation*/
+/*********************/
 
 
 @-webkit-keyframes bounceIn {
@@ -1942,13 +1950,6 @@ ul.action-links{
 
 
 .region.region-secondary-menu ul li{
-    
-/*    display: table-cell;
-    float: none;
-    padding: 5px 0;
-    vertical-align: middle;*/
-    
-    
     display: inline-block; 
     margin: 0;
     padding: 0;
@@ -2030,65 +2031,6 @@ ul.action-links{
 
 /***********/
 /*why cityu*/
-/***********/
-
-#block-aboutcityu{
-    margin-top: 50px;
-}
-
-#block-aboutcityu > div{
-    margin-bottom: 10px;
-}
-
-#block-aboutcityu > div > .paragraph > .paragraph__column > div{
-    padding: 0 10px 0 5px;
-}
-
-#block-aboutcityu img, #block-aboutcityumap img{
-    width: 100%;
-    height: 100%!important;
-}
-
-.aboutcityu_overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-color: rgba(0,0,0,.5);
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.aboutcityu_overlay:hover{
-    opacity: 1;
-}
-
-.aboutcityu_overlay i.fa-search{
-    position: absolute;
-    top: 40%;
-    font-size: 50px;
-    color: white;
-    left: 45%;
-}
-#block-aboutcityumap img[alt="Mobile Map"]{
-    display: none;
-}
-
-@media(max-width: 767px){
-    #block-aboutcityumap img[alt="Desktop Map"]{
-        display: none;
-    }
-    #block-aboutcityumap img[alt="Mobile Map"]{
-        display: block;
-    }
-}
-
-
-/***********/
-/*why cityu 2*/
 /***********/
 
 #page_content-60{
@@ -2337,121 +2279,8 @@ ul.action-links{
     }
 }
 
-
 /*************************/
 /*facilities and supports*/
-/*************************/
-
-
-
-
-/*#block-aboutcityufacilitiesandsupports > .paragraph--type--bp-columns:nth-child(odd){ */
-#block-aboutcityufacilitiesandsupports > div:nth-child(odd) .paragraph--type--bp-columns{
-    background-color: #F0E9F1;
-}
-
-/* #block-aboutcityufacilitiesandsupports > .paragraph--type--bp-columns:nth-child(even){ */
-#block-aboutcityufacilitiesandsupports > div:nth-child(even) .paragraph--type--bp-columns{
-    background-color: #F1F2F2;
-}
-
-
-#block-aboutcityufacilitiesandsupports p{
-    text-align: justify;
-}
-
-
-/*image block*/
-
-/* #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(odd) .paragraph--type--bp-columns__2col:nth-child(1){ */
-#block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
-    width: 40%;
-    float: right;
-    padding: 0;
-}
-
-/* #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(1){ */
-#block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
-    width: 40%;
-    float: left;
-    padding: 0;
-}
-
-
-/*content block*/
-
-/* #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(odd) .paragraph--type--bp-columns__2col:nth-child(2){ */
-#block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
-    width: 59%;
-    padding: 2% 0 2% 5%;
-}
-
-/* #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(2){ */
-#block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
-    width: 59%;
-    padding: 2% 5% 2% 0;  
-}
-
-
-#block-aboutcityufacilitiesandsupports a:hover {
-    color: #863275;
-}
-
-#block-aboutcityufacilitiesandsupports h2 a{
-    text-decoration: none;
-/*    color: #58595B;*/
-}
-
-#block-aboutcityufacilitiesandsupports p{
-    font-size: 15px;
-    color: #58595B;
-}
-
-
-@media (max-width: 1899px){
-
-/*  #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(odd) .paragraph--type--bp-columns__2col:nth-child(2){ */
-	#block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
-        padding-left: 5%;
-        width: 49%;
-    }
-    
-/*  #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(2){	*/
-	#block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
-        padding-right: 5%;      
-        width: 49%;
-    }
-}
-
-@media (max-width: 1199px){
-    #block-aboutcityufacilitiesandsupports h2{
-        font-size: 20px;
-    }
-/*  #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(odd) .paragraph--type--bp-columns__2col:nth-child(1),
-    #block-aboutcityufacilitiesandsupports .paragraph.paragraph--type--bp-columns:nth-child(even) .paragraph--type--bp-columns__2col:nth-child(1){	*/
-	#block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1),
-	#block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
-        width: 50%;
-    }
-}
-
-@media (max-width: 767px){
-	
-    #block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2),
-    #block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(2){
-        width: 95%;
-        padding: 2% 0 5% 5%;
-    }
-    
-    #block-aboutcityufacilitiesandsupports div:nth-child(odd) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1), 
-    #block-aboutcityufacilitiesandsupports div:nth-child(even) .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col:nth-child(1){
-        display: none;	
-    }
-}
-
-
-/*************************/
-/*facilities and supports:2*/
 /*************************/
 
 #page_content-254 > .content > div:nth-child(odd){
@@ -2654,8 +2483,8 @@ ul.action-links{
 
 
 #block-researchhomeinfographic .field--name-field-text-demo{
-    margin-bottom: 15%;
-    padding: 0 8%;
+    /*margin-bottom: 15%;
+    padding: 0 8%;*/
 }
 
 #block-researchhomeinfographic .field--name-field-text-demo p{
@@ -2695,6 +2524,10 @@ ul.action-links{
 @media(max-width: 767px){
     #block-researchhomeinfographic .field--name-field-title{
         font-size: 7vw;
+    }
+	
+    #block-researchhomeinfographic .field--name-field-text-demo{
+	padding: 0 8%;   
     }
     
 }
@@ -3177,73 +3010,6 @@ a.research_areas_school_website{
     }
 }
 
-/***********************/
-/*PhD Fellowship Scheme*/
-/**********************/
-
-
-
-
-/*
-
-#block-researchphdfellowshipscheme201718 .col-sm-2 p:not(:nth-child(14)):not(:nth-child(17)):hover{
-    color: #ffffff!important;
-    background-color: #9a7894;    
-}
-
-#block-researchphdfellowshipscheme201718 .col-sm-2 p:hover a{
-     color: #ffffff!important;
- }
-
-
-
-#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .field--name-field-caption p:nth-child(3){
-    padding-left: 8%;
-    color: grey;
-}
-
-
-
-
-#block-researchphdfellowshipscheme201718 .col-sm-10 h1, #block-researchphdfellowshipscheme201718 .col-sm-10 h2{
-    color: #863d75;
-    font-size: 25px;
-}
-
-
-#block-researchphdfellowshipscheme201718 .field--name-field-body .field--items{
-    display: none;
-}
-
-#block-researchphdfellowshipscheme201718 .field--name-field-body .field--items{
-    text-align: justify;
-}
-
-@media(max-width: 991px){
-    #block-researchphdfellowshipscheme201718 h1{
-        font-size: 35px;
-
-
-    }
-}
-
-@media (max-width: 767px){
-    #block-researchphdfellowshipscheme201718 .col-sm-10{
-        padding: 0 15px;
-        line-height: 1.42857143;
-    }
-    
-    #block-researchphdfellowshipscheme201718 .col-sm-10 h1{
-        font-size: 30px;
-
-
-    }
-    
-    #block-researchphdfellowshipscheme201718 .col-sm-2{
-        padding: 5%;
-    }
-}*/
-
 
 /******************************************************/
 /*Research Degree Programmes: Student Visa Application*/
@@ -3512,14 +3278,6 @@ a.research_areas_school_website{
 }
 
 
-/*#block-doctoratehome-introduction p{
-    text-align: justify;
-}
-
-#block-doctoratehome-introduction .field--name-bp-image-field img{
-    margin: 10% 5%;
-}*/
-
 #block-doctoratehome-introduction .field--name-field-background-image img{
     
     position: absolute;
@@ -3528,10 +3286,6 @@ a.research_areas_school_website{
     min-height: 330px;
     display: none;
 }
-
-
-
-
 
 #block-doctoratehome-introduction .field--name-bp-text{
     padding: 5% 0;
@@ -4131,9 +3885,9 @@ a.research_areas_school_website{
 }
 
 
-/*****************/
+/********/
 /*Events*/
-/****************/
+/********/
 
 
 .col-centered {
@@ -4331,118 +4085,6 @@ a.research_areas_school_website{
 }
 
 
-
-/* old design:
-
-
-#block-views-block-news-events-news-block-3{
-    margin: 0% 15%;
-    
-}
-
-#block-views-block-news-events-news-block-3 .views-field .field-content div > div:nth-child(1){
-    
-    display: inline-block;
-    float: left;
-    padding: 15% 3%;
-    background-color: #883277;
-    color: #ffffff;
-    font-size: 20px;
-    
-    display: inline-block;
-    float: left;
-    padding-top: 3%;
-    width: 15%;
-    background-color: #883277;
-    color: #ffffff;
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    text-align: center;
-
-}
-
-#block-views-block-news-events-news-block-3 .views-field .field-content div > div:nth-child(2){
-    float: right;
-    width: 85%;
-    padding: 3%;
-}
-
-
-#block-views-block-news-events-news-block-3  .views-field{
-    clear: both;
-    overflow: hidden;
-    background-color: #f0e9f1;
-    margin-bottom: 4%;
-    position: relative;
-
-}
-
-#block-views-block-news-events-news-block-3  .field-content h2{
-    margin-top: 0;
-    font-size: 25px;
-    padding-left: 15%;
-    text-transform: none;
-    
-
-}
-
-#block-views-block-news-events-news-block-3  .field-content p{
-    padding-left: 15%;
-    padding-right: 3%;
-
-}
-
-
-@media(max-width: 1199px){
-    #block-views-block-news-events-news-block-3{
-        margin: 0;
-    }
-    .landing_news_events_news{
-        margin: 0;
-    }
-    
-    
-
-    
-    #block-views-block-news-events-news-block-3 .views-field .field-content div > div:nth-child(1){
-        font-size: 16px;
-    }
-}
-
-
-@media(max-width: 767px){
-    
-    .landing_news_events_news{
-        margin: 0;
-    }
-    
-    
-    #block-views-block-news-events-news-block-3 .views-field .field-content div > div:nth-child(1),
-    #block-eventnewshome-upcoming .views-field .field-content div > div:nth-child(1), #block-eventnewshome-past .views-field .field-content div > div:nth-child(1),
-    #block-views-block-eventnewshome-upcoming-block-5 .views-field .field-content div > div:nth-child(1){
-        float: none;
-        padding: 2% 0;
-        width: 100%;
-        position: relative;
-        text-align: center;
-    }
-    #block-views-block-news-events-news-block-3 .views-field .field-content div > div:nth-child(2),
-    #block-eventnewshome-upcoming .views-field .field-content div > div:nth-child(2), #block-eventnewshome-past .views-field .field-content div > div:nth-child(2),
-    #block-views-block-eventnewshome-upcoming-block-5 .views-field .field-content div > div:nth-child(2){
-        float: none;
-        width: 100%;
-        padding: 3%;
-    }
-
-    #block-views-block-news-events-news-block-3  .field-content h2{
-        font-size: 18px;
-    }
-
-    
-    
-}*/
 /****************/
 /*public lecture*/
 /****************/
@@ -4569,11 +4211,6 @@ a.research_areas_school_website{
 #block-banner-search{
     margin-bottom: 3%;
 }
-
-/*#block-banner-search .paragraph--type--bp-image .field--name-field-toi{
-    left: 38%;
-}*/
-
 
 
 #views-exposed-form-programme-search-page-1{
@@ -4743,87 +4380,8 @@ a.research_areas_school_website{
 }
 
 
-
-
 /**************/
 /*Diverse Area*/
-/**************/
-
-
-
-
-#block-taughtdiversearea{
-    margin: 3% 0;
-    text-align: center;
-}
-
-#block-taughtdiversearea .paragraph--type--bp-columns__7col{
-    display: inline-block;
-}
-
-
-#block-taughtdiversearea .field--name-field-text-demo{
-    position: absolute;
-    top: 30%;
-    font-size: 1.5vw;
-    font-weight: 700;
-    line-height: 1.8;
-    text-align: center;
-    padding: 0 1em;
-}
-
-#block-taughtdiversearea .paragraph--type--bp-columns__7col:nth-child(3) .field--name-field-text-demo{
-    padding: 0 0.5em;
-}
-
-#block-taughtdiversearea .paragraph--type--bp-columns__7col:nth-child(6) .field--name-field-text-demo{
-    padding: 0 0em;
-}
-
-#block-taughtdiversearea .field--name-field-image img{
-    max-width: 159px!important;
-    width: 100%;
-}
-
-.daImg{
-    transition: .3s ease;
-    opacity: 1;
-    backface-visibility: hidden;
-}
-
-.daContainer:hover .daImg{
-    opacity: 0.3;
-}
-
-.daContainer:hover .daLink{
-    color: #863d75;
-    text-shadow: 0px 0px 0px #000000;
-    text-decoration: none;
-}
-
-
-
-.daLink, .daLink:focus{
-    color: #ffffff;
-    text-shadow: 2px 2px 8px #000000;
-    text-decoration: none;
-}
-
-@media(min-width: 1900px){
-    #block-taughtdiversearea .field--name-field-text-demo{
-        font-size: 25px;
-    }
-
-}
-
-@media(max-width: 1199px){
-    #block-taughtdiversearea .paragraph--type--bp-columns__7col{
-        width: 14.285714285714%;
-    }
-
-}
-/**************/
-/*Diverse Area: 2*/
 /**************/
 
 
@@ -4925,22 +4483,6 @@ a.research_areas_school_website{
 #block-researchfinancialassistanceandscholarships p{
     text-align: justify;
 }
-
-
-
-
-/*#block-researchacademicawards > div.paragraph.paragraph--type--text.paragraph--view-mode--default > div > div > h2 > strong,
-#block-researchfinancialassistanceandscholarships > div.paragraph.paragraph--type--bp-simple.paragraph--view-mode--default > div > div > h2 > strong{
-    font-size: 40px;
-    color: #863275;
-}*/
-
-/*#block-researchacademicawards > div.paragraph.paragraph--type--text.paragraph--view-mode--default > div > div > h2,
-#block-researchfinancialassistanceandscholarships > div.paragraph.paragraph--type--bp-simple.paragraph--view-mode--default > div > div > h2{
-    margin: 5% 0;
-}*/
-
-
 
 #block-researchfinancialassistanceandscholarships .field--name-bp-text h2, #block-researchacademicawards .field--name-bp-text h2{
     font-size: 25px;
@@ -5141,15 +4683,6 @@ a.research_areas_school_website{
     padding: 2% 0%;
     margin-left: 2%;
 }
-/*
-#views-exposed-form-taught-faq-01-page-1 .form-item-field-faq-language-target-id{
-    width: 10%;
-    padding: 2% 0%;
-    margin-left: 2%;
-	
-    display: none;
-}
-*/
 
 #views-exposed-form-taught-faq-01-page-1 .js-form-type-textfield{
     width: 90%;
