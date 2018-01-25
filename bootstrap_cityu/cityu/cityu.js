@@ -788,17 +788,20 @@ jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
 
 jQuery('.cwm_content').parents('.content').addClass('container').addClass('content_with_menu');
 
-
-
 jQuery('<i class="fa fa-caret-down collapse_caret" aria-hidden="true"></i><div class="menu col-sm-2"></div>').insertBefore(jQuery('.cwm_content'));
 
-/*	
+/*mobile caret*/
+
 jQuery('.collapse_caret').click(function(){
 	jQuery('.content_with_menu .col-sm-2').slideToggle('fast');
 });
-*/
+
 
 jQuery('.col-sm-10 .menu_index').each(function(){
+    if (!(jQuery(this).siblings('.item_body').length)){
+    	jQuery(this).child('p').addClass('noHover');
+    }
+		
     jQuery('.menu.col-sm-2').append(jQuery(this).html());
 
 });
@@ -812,15 +815,20 @@ if(jQuery('.menu.col-sm-2').length){
     jQuery('.menu.col-sm-2 p:first-child').addClass('activeTimelineIndex');
 }
 
-jQuery('.menu.col-sm-2 p').click(function(){
+/*
+jQuery('.menu.col-sm-2 p').not(jQuery('.menu.col-sm-2 p.noHover')).click(function(){
     jQuery('.menu.col-sm-2 p').not(jQuery(this)).removeClass('activeTimelineIndex');
     jQuery(this).addClass('activeTimelineIndex');
    
 });
+*/
 
-jQuery('.menu.col-sm-2 p').not(jQuery('#block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .field--name-field-caption p')).click(function(){
+jQuery('.menu.col-sm-2 p').click(function(){
 
-        
+        if (!(jQuery(this).hasClass('noHover'))){
+	    jQuery('.menu.col-sm-2 p').not(jQuery(this)).removeClass('activeTimelineIndex');
+    	    jQuery(this).addClass('activeTimelineIndex');
+	}
         
         var index = jQuery(".menu.col-sm-2 p").index(jQuery(this)) + 1;
         
