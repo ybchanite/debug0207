@@ -3987,7 +3987,6 @@ a.research_areas_school_website{
 /*Visiting*/
 /**********/
 
-
 /*caret for mobile*/
 .collapse_caret{
     display: none!important;
@@ -4016,9 +4015,19 @@ a.research_areas_school_website{
     background-color: #9a7894;
 }
 
+.content_with_menu .col-sm-2  p.noHover{
+    cursor: initial;
+}
+
+.content_with_menu .col-sm-2  p.noHover:hover{
+    color: initial;
+    background-color: initial;
+}
 
 
-
+.col-sm-10 .menu_index{
+    display: none;
+}
 
 .content_with_menu .col-sm-10{
     padding: 0 7%;
@@ -4062,18 +4071,18 @@ a.research_areas_school_website{
 /*postgraduate visiting*/
 
 
-#block-visitingpostgraduatestudents .content_with_menu{
+#page_content-21 .content_with_menu > div:nth-child(2){
     margin-top: 2%;
 }
 
 
 
-#block-visitingpostgraduatestudents table th{
+#page_content-21 table th{
     background-color: #58585A;
     color: #ffffff;
 }
 
-#block-visitingpostgraduatestudents table th p{
+#page_content-21 table th p{
 
     text-align: center;
 }
@@ -4092,6 +4101,10 @@ a.research_areas_school_website{
     .content_with_menu .col-sm-10{
         padding: 0 15px;
         line-height: 1.42857143;
+    }
+	
+    .collapse_caret < div{
+        text-align: right;
     }
 	
     .collapse_caret{
