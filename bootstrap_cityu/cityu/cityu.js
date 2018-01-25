@@ -768,7 +768,7 @@ jQuery( "#diverse_area_blocks .field--name-bp-image-field img" ).addClass( "daIm
     
 */
 
-jQuery('#diverse_area_blocks .field--name-field-toi a').click(function(){
+jQuery('#diverse_area_blocks a').click(function(){
     /*store the index of the college/school*/
     var index = jQuery("#diverse_area_blocks .daContainer").index(jQuery(this).parents('.daContainer')) + 1;
     jQuery(this).attr('href', jQuery(this).attr('href') + "#" + index);
