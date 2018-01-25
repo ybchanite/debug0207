@@ -2553,6 +2553,10 @@ ul.action-links{
 /*research degree program*/
 /*************************/
 
+#page_content-6{
+    text-align: center;
+}
+
 
 /*carousel*/
 
@@ -2713,9 +2717,11 @@ ul.action-links{
 /*Top-Notch Researchers*/
 
 #block-researchhomeresearchers{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+    display: inline-block;
+	
 }
 
 #block-researchhomeresearchers .field--name-field-text-demo strong{
@@ -2852,7 +2858,6 @@ ul.action-links{
 
 
 .profileContainer:hover .profileImage {
-/*    opacity: 0.3;*/
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
@@ -2893,7 +2898,11 @@ ul.action-links{
 @media(max-width: 767px){
     .profileContainer{
 	width: auto;
-    } 
+    }
+	
+    #block-researchhomeresearchers{
+	padding: 0;	
+    }	
     #block-researchhomeresearchers .views-field-field-know-more .field-content .profileContainer:nth-child(2){
         font-size: 15px;
     }
@@ -2916,6 +2925,14 @@ ul.action-links{
     
 }
 
+
+/*programme structure*/
+
+.research_program_structure{
+    text-align: center;
+    margin-top: 5%;
+    
+}
 
 
 
@@ -3085,7 +3102,7 @@ a.research_areas_school_website{
 /*research degree program extrance requirement*/
 /**********************************************/
 
-.entrance_block{
+.entrance_block, .entrance_block_even{
     padding: 2% 15%;
     font-size: 16px;
     color: #58595B;
@@ -3096,12 +3113,6 @@ a.research_areas_school_website{
     background-color: #f3f3f3;
     
 }
-
-.entrance_block:nth-child(even){
-    background-color: #f3f3f3;
-    
-}
-
 
 #block-views-block-research-entrance-eng-p-require-block-1{
     background-color: #F1F2F2;
@@ -3141,7 +3152,7 @@ a.research_areas_school_website{
     text-align: justify;
 }
 
-.entrance_prog_structure, .entrance_medium{
+.entrance_medium{
     text-align: center;
 }
 
@@ -3155,7 +3166,7 @@ a.research_areas_school_website{
 
 
 @media (max-width: 767px){
-    .entrance_block{
+    .entrance_block, .entrance_block_even{
         padding: 2% 5%;
     }
 	
@@ -3176,7 +3187,7 @@ a.research_areas_school_website{
 
 
 
-/*menu*/
+/*
 
 #block-researchphdfellowshipscheme201718 .col-sm-2 p:not(:nth-child(14)):not(:nth-child(17)):hover{
     color: #ffffff!important;
@@ -3188,13 +3199,13 @@ a.research_areas_school_website{
  }
 
 
-/*indent items*/
+
 #block-researchphdfellowshipscheme201718 .paragraph--type--contents-with-menu .field--name-field-caption p:nth-child(3){
     padding-left: 8%;
     color: grey;
 }
 
-/*Content blocks*/
+
 
 
 #block-researchphdfellowshipscheme201718 .col-sm-10 h1, #block-researchphdfellowshipscheme201718 .col-sm-10 h2{
@@ -3234,7 +3245,7 @@ a.research_areas_school_website{
     #block-researchphdfellowshipscheme201718 .col-sm-2{
         padding: 5%;
     }
-}
+}*/
 
 
 /******************************************************/
@@ -3283,7 +3294,7 @@ a.research_areas_school_website{
     
 }
 
-.landing_taught_applynow h2{
+.landing_taught_applynow_text h2{
     color: #863275;
 }
 
@@ -3295,8 +3306,6 @@ a.research_areas_school_website{
     overflow-y: scroll;
     border: 1px solid #ececec;
     max-height: 500px;
-/*     transition: .2s linear;
-    -webkit-transition: .2s linear; */
     
 }
 .landing_taught_applynow_text.active {
@@ -3987,6 +3996,10 @@ a.research_areas_school_website{
 /*Visiting*/
 /**********/
 
+/***********************/
+/*PhD Fellowship Scheme*/
+/**********************/
+
 /*caret for mobile*/
 .collapse_caret{
     display: none!important;
@@ -4438,29 +4451,26 @@ a.research_areas_school_website{
 /****************/
 
 
-.landing_p:last-child{
-/*    background-color: #f1f2f2;*/
+#public_lecture_intro{
     padding: 1%;
     margin-bottom: 5%;
     text-align: justify;
         
 }
 
-#block-views-block-news-events-public-lecture-block-1 .views-field-title a{
-    font-size: 18px;
-    color: #863d75;
-}
 
 
-#block-views-block-news-events-public-lecture-block-1 .views-col{
-    width: 32%!important;
-    margin-right: 1%;
+#block-views-block-news-events-public-lecture-block-1{
     text-align: center;
     
 }
+
+#block-views-block-news-events-public-lecture-block-1 > div{
+    padding: 0;
+}
 #block-views-block-news-events-public-lecture-block-1 img{
     display: inline-block;
-    width: 100%;
+    max-width: 100%;
 
 }
 
@@ -4472,7 +4482,9 @@ a.research_areas_school_website{
 }
 
 #block-views-block-news-events-public-lecture-block-1 .titleLink{
-
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
 
     text-align: center;
 
@@ -4484,21 +4496,6 @@ a.research_areas_school_website{
 }
 
 #block-views-block-news-events-public-lecture-block-1 .titleContainer {
-/*    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 90%;
-    opacity: 0;
-    margin: auto;
-    transition: .2s ease;
-    background-color: transparent;*/
-    
-    
-    
-    
     position: absolute;
     top: 0;
     bottom: 0;
@@ -4512,23 +4509,10 @@ a.research_areas_school_website{
     transition: .2s ease;
 }
 
-
-#block-views-block-news-events-public-lecture-block-1 .titleLink a{
-    color: #fff;
-    font-size: 25px;
-    text-decoration: none;
-    
-}
-#block-views-block-news-events-public-lecture-block-1 .views-field-body{
+#block-views-block-news-events-public-lecture-block-1 .field--name-field-toi{
     display: none;
 }
 
-/*#block-views-block-news-events-public-lecture-block-1 .views-field-title{
-    color: #863275;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 3%;
-}*/
 
 #block-views-block-news-events-public-lecture-block-1  .newsContainer:hover img{
     opacity: 0.9;
