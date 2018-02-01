@@ -15,7 +15,7 @@
 		<td><span class="prog_label">{{ node.field_mode_of_fund.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_mode_of_fund[0]['#markup'] }}</span></td>
 	</tr>
 	<tr>
-		<td><span class="prog_label">{{ node.field_admit_prog_code.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ node.field_admit_prog_code.value }}</span></td>
+		<td><span class="prog_label">{{ node.field_admit_prog_code.fieldDefinition.label }}</span></td><td><span class="prog_content"><b>{{ node.field_admit_prog_code.value }}</b></span></td>
 	</tr>
 	<tr>
 		<td><span class="prog_label">{{ node.field_mode_of_study.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_mode_of_study[0]['#markup'] }}</span></td>
@@ -38,8 +38,6 @@
 	<tr>
 		<td><span class="prog_label">{{ node.field_url_website.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_url_website[0] }}</span> </td>
 	</tr>
-	
-{{ content.field_url_social_media[0]['#title'] }}
 
         {% set count = node.field_url_social_media.getvalue | length %}
   	{% for i in 0..count-1 %}
@@ -50,13 +48,19 @@
   	{% endfor %}
 	
 	<tr>
+		<td><span class="prog_label">{{ node.field_know_more.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_know_more[0] }}</span> </td>
+	</tr>
+	
+	<tr>
 		<td><span class="prog_label">{{ node.field_app_deadline.fieldDefinition.label }}</span></td>
 		<td><span class="prog_content">
 		  {{ node.field_app_deadline.value|date(format="d M Y") }} (Local)<br>
 		  {{ node.field_app_deadline_nl.value|date(format="d M Y") }} (Non-local)
-		
-		
 		</span> </td>
+	</tr>
+	
+	<tr>
+		<td><span class="prog_label">{{ node.field_mode_of_processing.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ node.field_mode_of_processing.value }}</span></td>
 	</tr>
 	
 	{% for item in node.field_staff_contact %}
@@ -64,7 +68,7 @@
       	    <td><span class="prog_label">{{ item.entity.field_staff_role.entity.name.value }}</span></td>
 	    <td><span class="prog_content">
 	          <b>{{ item.entity.field_staff_title.entity.name.value }} {{ item.entity.field_name.value }}</b><br>
-		  {{ item.entity.field_quali.value }}
+		  <em>{{ item.entity.field_quali.value }}</em>
 		  {{ item.entity.field_phone.value }}
 		  {{ item.entity.field_email.value }}
 	    
@@ -74,7 +78,13 @@
 	{% endfor %}
 
 
-	
+	<tr>
+		<td><span class="prog_label">{{ node.field_general_enquiries.fieldDefinition.label }}</span></td>
+		<td><span class="prog_content">
+			{{ node.field_general_enquiries.value }}<br>
+			{{ node.field_pcms_admit_office_email.value }}
+		</span></td>
+	</tr>
 </tbody>
 </table>
  
@@ -82,5 +92,9 @@
  
 </div>
 
+<div class="prog_outline">
+	{% for item in node.field_outline %}
+		{{ item.value }}
+	{% endfor %}
 
-<div class="prog_outline">{{ content.field_outline }}</div>
+</div>
