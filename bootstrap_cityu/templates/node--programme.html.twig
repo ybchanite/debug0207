@@ -59,8 +59,12 @@
 	<tr class="prog_application_deadline">
 		<td><span class="prog_label">{{ node.field_app_deadline.fieldDefinition.label }}</span></td>
 		<td><span class="prog_content">
-		  {{ node.field_app_deadline.value|date(format="d M Y") }} (Local)<br>
-		  {{ node.field_app_deadline_nl.value|date(format="d M Y") }} (Non-local)
+		  {% if node.field_app_deadline.value is not empty %}
+		    {{ node.field_app_deadline.value|date(format="d M Y") }} (Local)<br>
+		  {% endif %}
+		  {% if node.field_app_deadline_nl.value is not empty %}
+		    {{ node.field_app_deadline_nl.value|date(format="d M Y") }} (Non-local)
+		  {% endif %}
 		</span> </td>
 	</tr>
 	
@@ -72,8 +76,10 @@
 	  <tr class="prog_staff">
       	    <td><span class="prog_label">{{ item.entity.field_staff_role.entity.name.value }}</span></td>
 	    <td><span class="prog_content">
-	          <b>{{ item.entity.field_staff_title.entity.name.value }} {{ item.entity.field_name.value }}</b><br>
-		  <em>{{ item.entity.field_quali.value }}</em>
+	          <b>{{ item.entity.field_staff_title.entity.name.value }} {{ item.entity.field_name.value }}</b>
+		  {% if item.entity.field_quali.value is not empty %}
+		    <br><em>{{ item.entity.field_quali.value }}</em>
+		  {% endif %}
 		  {% if item.entity.field_phone.value is not empty %}
 		    <br>{{ item.entity.field_phone.value }}
 		  {% endif %}
