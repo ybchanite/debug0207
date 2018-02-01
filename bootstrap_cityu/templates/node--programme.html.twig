@@ -41,7 +41,7 @@
 
         {% set count = node.field_url_social_media.getvalue | length %}
   	{% for i in 0..count-1 %}
-    	  <tr>
+    	  <tr class="prog_social_media">
       	    <td><span class="prog_label">{{ content.field_url_social_media[i]['#title'] }}</span></td>
 	    <td><span class="prog_content"><a href="{{ content.field_url_social_media[i]['#url'] }}">{{ content.field_url_social_media[i]['#url'] }}</a></span></td>
     	  </tr>
@@ -51,7 +51,7 @@
 		<td><span class="prog_label">{{ node.field_know_more.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_know_more[0] }}</span> </td>
 	</tr>
 	
-	<tr>
+	<tr class="prog_application_deadline">
 		<td><span class="prog_label">{{ node.field_app_deadline.fieldDefinition.label }}</span></td>
 		<td><span class="prog_content">
 		  {{ node.field_app_deadline.value|date(format="d M Y") }} (Local)<br>
@@ -64,7 +64,7 @@
 	</tr>
 	
 	{% for item in node.field_staff_contact %}
-	  <tr>
+	  <tr class="prog_staff">
       	    <td><span class="prog_label">{{ item.entity.field_staff_role.entity.name.value }}</span></td>
 	    <td><span class="prog_content">
 	          <b>{{ item.entity.field_staff_title.entity.name.value }} {{ item.entity.field_name.value }}</b><br>
@@ -81,7 +81,7 @@
 	<tr>
 		<td><span class="prog_label">{{ node.field_general_enquiries.fieldDefinition.label }}</span></td>
 		<td><span class="prog_content">
-			{{ node.field_general_enquiries.value|raw }}<br>
+			{{ node.field_general_enquiries.value|raw }}
 			{{ node.field_pcms_admit_office_email.value }}
 		</span></td>
 	</tr>
