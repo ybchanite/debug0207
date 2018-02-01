@@ -81,7 +81,7 @@
 	<tr>
 		<td><span class="prog_label">{{ node.field_general_enquiries.fieldDefinition.label }}</span></td>
 		<td><span class="prog_content">
-			{{ node.field_general_enquiries.value }}<br>
+			{{ node.field_general_enquiries.value|raw }}<br>
 			{{ node.field_pcms_admit_office_email.value }}
 		</span></td>
 	</tr>
@@ -93,8 +93,6 @@
 </div>
 
 <div class="prog_outline">
-	{% for item in node.field_outline %}
-		{{ item.value }}
-	{% endfor %}
+	{{ content.field_outline }}
 
 </div>
