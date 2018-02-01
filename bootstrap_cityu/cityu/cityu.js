@@ -1023,6 +1023,15 @@ jQuery( '<a id="fullListButton"><i class="fa fa-list-ul" aria-hidden="true"></i>
     
 });
     
+/***********************/
+/*Programme Information*/
+/***********************/
+
+jQuery('.prog_general_info tr').each(function(){
+	if (jQuery(this).find('.prog_content').is(':empty') || jQuery(this).find('.prog_label').is(':empty')){
+		jQuery(this).hide();
+	}
+});
 
 
 /****************/
@@ -1031,19 +1040,6 @@ jQuery( '<a id="fullListButton"><i class="fa fa-list-ul" aria-hidden="true"></i>
 jQuery('#edit-submit-programme-search').text("Search");
 
 jQuery('.view-programme-search #edit-field-prog-title-value').attr("placeholder", "Insert Your Keywords");
-
-
-//jQuery(".view-programme-search thead").html('<tr><th rowspan="2">Code</th><th rowspan="2">Programme Title</th><th rowspan="2">Mode of Study</th><th colspan="2">Application Deadline<br>(by 23:59 of the specified date)</th><th colspan="2">Accept Late Applications</th><th rowspan="2">Links</th></tr><tr><th>Local</th><th>Non-Local</th><th>Local</th><th>Non-Local</th></tr>');
-    
-
-/*Program search input = program search input*/
-
-//jQuery('#edit-submit-programme-search').click(function(){
-//    
-//    var searchInput = jQuery('#views-exposed-form-programme-search-page-1 #edit-field-prog-title-value').val();
-//    alert(searchInput);
-//    jQuery('#views-exposed-form-programme-search-page-1 #edit-field-programme-tag-value').val(searchInput);
-//});
 
 
 /*****/
@@ -1055,11 +1051,6 @@ function sortedResult(){
     
     var qapp = jQuery('#edit-field-faq-role-target-id option:selected').text();
     var qcat = jQuery('#edit-field-faq-category-target-id-1 option:selected').text();
-
-    //jQuery('.view-taught-faq-01 .views-row').hide();
-    //jQuery('.view-empty').hide();
-    //jQuery('#block-views-block-taught-faq-01-block-1').show();
-
 
     /*to get the instant sorted result*/
     jQuery('.view-taught-faq-01 .views-row').each(function(){
@@ -1164,39 +1155,6 @@ jQuery('#block-views-block-research-entrance-eng-p-require-block-1 .views-row').
         jQuery(this).find('.views-field-field-coll-eng-p-require').show('fast');
     }
 });
-
-//old design
-//jQuery('body').click(function(e) {
-//    
-//    
-//    if (jQuery(e.target).parent().hasClass('view-header')) {
-//        jQuery('#block-views-block-research-entrance-coll-list-block-2 .view-content').toggle();
-//    }else{
-//        jQuery('#block-views-block-research-entrance-coll-list-block-2 .view-content').hide();
-//    }
-//               
-//});
-//
-//
-//jQuery('#block-views-block-research-entrance-coll-list-block-2 .view-content .views-row').click(function(){
-//                    
-//    var target = jQuery(this).text();
-//    jQuery('#block-views-block-research-entrance-coll-list-block-2 .view-header h2').text(target);
-//   
-//
-//});
-//
-//
-//jQuery('#block-views-block-research-entrance-coll-list-block-2 .view-content .views-row').click(function(){
-//        var index = jQuery("#block-views-block-research-entrance-coll-list-block-2 .view-content .views-row").index(jQuery(this)) + 1;    
-//        var target = jQuery("#block-views-block-research-entrance-eng-p-require-block-1 .view-content .views-row:nth-child(" + index + ")");     
-//        jQuery('#block-views-block-research-entrance-eng-p-require-block-1 .views-row').css('display','none');
-//        target.css('display','block');
-//        
-//        
-//    });
-    
-
 
 /********/
 /*footer*/
