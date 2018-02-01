@@ -38,6 +38,8 @@
 	<tr>
 		<td><span class="prog_label">{{ node.field_url_website.fieldDefinition.label }}</span></td><td><span class="prog_content">{{ content.field_url_website[0] }}</span> </td>
 	</tr>
+	
+{{ content.field_url_social_media[0]['#title'] }}
 
         {% set count = node.field_url_social_media.getvalue | length %}
   	{% for i in 0..count-1 %}
