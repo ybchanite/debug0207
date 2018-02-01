@@ -3748,8 +3748,23 @@ a.research_areas_school_website{
     display: inline-block;
 }
 
-.prog_outline{
+.prog_outline, .mos_remark, .prog_remark{
     margin: 30px 0;
+}
+
+.mos_remark, .prog_remark{
+    font-size: 14px;
+}
+
+.prog_outline .field--label{
+    display: none;
+}
+
+.prog_outline .field--name-field-outline-title{
+    color: #8e1149;
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 @media (max-width: 767px){
@@ -4970,13 +4985,6 @@ a.research_areas_school_website{
 
 .prog_image > div{
     display: inline-block;
-}
-
-
-.field--name-field-outline-title{
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 1%;
 }
 
 
