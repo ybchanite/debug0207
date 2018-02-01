@@ -74,9 +74,12 @@
 	    <td><span class="prog_content">
 	          <b>{{ item.entity.field_staff_title.entity.name.value }} {{ item.entity.field_name.value }}</b><br>
 		  <em>{{ item.entity.field_quali.value }}</em>
-		  {{ item.entity.field_phone.value }}
-		  {{ item.entity.field_email.value }}
-	    
+		  {% if item.entity.field_phone.value is not empty %}
+		    <br>{{ item.entity.field_phone.value }}
+		  {% endif %}
+		  {% if item.entity.field_email.value is not empty %}
+		    <br>{{ item.entity.field_email.value }}
+		  {% endif %}
 	    </span></td>
     	  </tr>
  	
