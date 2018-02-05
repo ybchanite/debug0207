@@ -1039,9 +1039,15 @@ jQuery('.prog_general_info tr').each(function(){
 /****************/
 jQuery('#edit-submit-programme-search').text("Search");
 
-var search_ph = jQuery('.view-programme-search #edit-field-prog-title-value').attr("data-original-title");
 
-jQuery('.view-programme-search #edit-field-prog-title-value').attr("placeholder", search_ph);
+
+jQuery(window).load(function(){
+    if (jQuery('.view-programme-search #edit-field-prog-title-value').length){
+        var search_ph = jQuery('.view-programme-search #edit-field-prog-title-value').attr("data-original-title");
+	jQuery('.view-programme-search #edit-field-prog-title-value').attr("placeholder", search_ph);  
+    }
+
+});
 
 
 /*****/
@@ -1114,9 +1120,13 @@ var newAction = originAction + '#faqAnchor';
 jQuery('#views-exposed-form-taught-faq-01-page-1').attr('action', newAction);
 
 
-var faq_ph = jQuery('.view-taught-faq-01 #edit-combine').attr("data-original-title");
-jQuery('.view-taught-faq-01 #edit-combine').attr("placeholder", faq_ph);
+jQuery(window).load(function(){
+    if (jQuery('.view-taught-faq-01 #edit-combine').length){
+        var faq_ph = jQuery('.view-taught-faq-01 #edit-combine').attr("data-original-title");
+	jQuery('.view-taught-faq-01 #edit-combine').attr("placeholder", faq_ph);  
+    }
 
+});
 
 jQuery('.views-field-field-faq-question').click(function(){
     if (jQuery(this).siblings('.view-taught-faq-01 .views-field-body').css('display') === 'none'){
