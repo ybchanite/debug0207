@@ -3730,7 +3730,7 @@ a.research_areas_school_website{
 }
 
 .prog_general_info table tr td:first-child{
-    width: 35%;
+    width: 40%;
     vertical-align: top;
 }
 
@@ -3765,6 +3765,14 @@ a.research_areas_school_website{
     margin: 15px 0;
     font-weight: 500;
     font-size: 20px;
+}
+ 
+.prog_outline table{
+    margin: 15px 0;
+}
+
+.prog_outline td{
+    padding: 15px;
 }
 
 @media (max-width: 767px){
