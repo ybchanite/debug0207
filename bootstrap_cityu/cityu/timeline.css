@@ -18,7 +18,7 @@
     font-size: 15px;
     text-align: center;
 
-    display:block;
+    /*display:block;*/
     
 }
 
@@ -64,6 +64,7 @@ hr{
 @media (max-width: 767px){
     .important_date table{
         overflow-x: scroll;
+	display: block;
     }
 }
 
