@@ -1112,8 +1112,10 @@ var newAction = originAction + '#faqAnchor';
 jQuery('#views-exposed-form-taught-faq-01-page-1').attr('action', newAction);
 
 
-
-jQuery('.view-taught-faq-01 #edit-combine').attr("placeholder", "Insert Your Keywords");
+if (jQuery('.view-taught-faq-01 #edit-combine').length){
+    var placeholder = jQuery('.view-taught-faq-01 #edit-combine').attr("data-original-title");
+    jQuery('.view-taught-faq-01 #edit-combine').attr("placeholder", placeholder);
+}
 
 jQuery('.views-field-field-faq-question').click(function(){
     if (jQuery(this).siblings('.view-taught-faq-01 .views-field-body').css('display') === 'none'){
