@@ -165,8 +165,24 @@ if (jQuery('#block-testfortoi').length){
 
 
 
-/*Counting effect*/
+
+
+
+
 if (jQuery('#block-testfortoi').length){
+	
+    /*background image*/
+    var image = jQuery('#block-testfortoi .para_background img').attr('src');
+    var style = '<style>.image:before {background: url(' + image + ') center center no-repeat;} </style>';
+    jQuery('head').append(style);
+
+    jQuery('#block-testfortoi').parent('div').addClass('image worldwide_bg');
+
+
+	
+	
+	
+    /*Counting effect*/
 
     var after = jQuery('#block-testfortoi .field--name-field-title').text().slice(-2);
 	
