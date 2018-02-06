@@ -1337,6 +1337,26 @@ body.user-logged-in .main-header.container > aside.col-sm-2{
 /*********************************/
 /*Homepage: worldwide recognition*/
 /*********************************/
+
+
+/*background image*/
+
+.worldwide_bg{
+    position: relative;
+    background:#94708d;
+    background:-webkit-gradient(left top,right bottom,color-stop(0,#fbfbfb),color-stop(50%,#d2c3cf),color-stop(51%,#d2c1ce),color-stop(100%,#e0e0e0));
+    background:-webkit-linear-gradient(135deg,#fbfbfb 0,#d2c3cf 50%,#d2c1ce 51%,#e0e0e0 100%);
+}
+
+.worldwide_bg:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    opacity: .6;
+    margin-top: 30px;
+}
+
 #block-testfortoi{
     text-align: center;
     padding-top: 30px;
@@ -1347,15 +1367,22 @@ body.user-logged-in .main-header.container > aside.col-sm-2{
     display: inline-block;
 }
 
-#block-testfortoi .paragraph--type--bp-columns__3col{
+#block-testfortoi #worldwide_infographic > div{
     opacity: 0;
-    
     animation-duration: 450ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    
     position: relative;
+	
+    transition: all .2s ease-in-out;
 }
+
+#block-testfortoi #worldwide_infographic > div:hover{
+    background: rgba(255,255,255,.5);
+    /*border: 1px solid rgba(251,251,251,.5);*/
+    animation-delay: 0.5s;
+}
+
 
 #block-testfortoi .para_background img{
     position: absolute;
@@ -1379,8 +1406,7 @@ body.user-logged-in .main-header.container > aside.col-sm-2{
 }
 
 #block-testfortoi .field--name-field-image img{
-    display: inline-block;
-    width: 190px;
+    display: none;
 }
 
 #block-testfortoi .field--name-field-title{
@@ -1414,7 +1440,7 @@ body.user-logged-in .main-header.container > aside.col-sm-2{
 }
 
 @media (max-width: 767px){     
-    #block-testfortoi .paragraph--type--bp-columns__3col{
+    #block-testfortoi #worldwide_infographic > div{
         width: 100%!important;
     }
 	
@@ -1424,7 +1450,9 @@ body.user-logged-in .main-header.container > aside.col-sm-2{
 }
 
 
-/*why cityu block*/
+/***********************/
+/*Home: why cityu block*/
+/***********************/
 
 
 
