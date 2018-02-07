@@ -376,32 +376,36 @@ a:focus, a:hover{
     border-color: transparent;
     position: absolute;
 }
-
+/*
 .collapsing{
     height: 100vh!important;
     width: 0!important;
     -webkit-transition-property: width!important;
     transition-property: width!important;
     padding: 0!important;
-}
+}*/
 
 #navbar-collapse{
     background-color: #8e6791;
     border-color: #8e6791;
     clear: both;
-    height: 100vh;
+    height: 100vh!important;
     position: fixed;
     z-index: 2000;
     width: 60vw;
     top: 0;
     right: 0;
-	
     transition: all 0.2s ease;
-    margin: 0!important;	
+    margin-right: 60vw!important;
+/*
     overflow-y: visible!important;
     overflow-x: hidden!important;
+	*/
 }
 
+.navbar-collapse.in{
+    margin-right: 0!important;
+}
 
 #close_navbutton{
     z-index: 2000;
