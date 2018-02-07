@@ -382,9 +382,17 @@ a:focus, a:hover{
     margin-top: 20%;
 }
 
+
+#block-mainnavigation li.expanded.dropdown{
+    border-top: 1px solid #9f7ea2;
+}
+
+#block-mainnavigation li.expanded.dropdown:last-child{
+    border-bottom: 1px solid #9f7ea2;
+}
+
 #block-mainnavigation .menu.dropdown-menu{
     background-color: #7f5c82;
-    border-top: 1px solid #9f7ea2;
     margin: 0;
 }
 
@@ -502,7 +510,7 @@ a:focus, a:hover{
 @media (max-width: 550px){
     #navbar-collapse{
         width: 100%;
-        margin: 0;
+        margin-right: -100%;
     }
 }
 
