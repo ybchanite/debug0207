@@ -484,7 +484,46 @@ a:focus, a:hover{
 #block-mainnavigation-3 > ul > li > a:hover{
     
     color: white;
+	
 }
+
+
+
+/*Programme Search & Enquiries*/
+
+#block-programsearchenquiries-2 .program_search, #block-programsearchenquiries-2 .enquiries{
+    background: #ececec;
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 15px 0;
+}
+
+#block-programsearchenquiries-2 .program_search a, #block-programsearchenquiries-2 .enquiries a{
+    text-decoration: none;
+    color: #484548;
+}
+
+/*Language switcher*/
+
+#block-languageswitcher-2 ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+#block-languageswitcher-2 ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+    background-color: #7f5c82;
+}
+#block-languageswitcher-2 ul li a{
+    color: #fff;
+}
+
+
+
+
+
 
 /*media: toggle navbar*/
 
