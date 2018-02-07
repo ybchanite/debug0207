@@ -376,14 +376,18 @@ a:focus, a:hover{
     border-color: transparent;
     position: absolute;
 }
-/*
-.collapsing{
-    height: 100vh!important;
-    width: 0!important;
-    -webkit-transition-property: width!important;
-    transition-property: width!important;
-    padding: 0!important;
-}*/
+
+
+.region.region-navigation-collapsible{
+    margin-top: 20%;
+}
+
+#block-mainnavigation .menu.dropdown-menu{
+    background-color: #7f5c82;
+    border-top: 1px solid #9f7ea2;
+    margin: 0;
+}
+
 
 #navbar-collapse{
     background-color: #8e6791;
@@ -396,11 +400,7 @@ a:focus, a:hover{
     top: 0;
     right: 0;
     transition: all 0.2s ease;
-    margin-right: 60vw!important;
-/*
-    overflow-y: visible!important;
-    overflow-x: hidden!important;
-	*/
+    margin-right: -60vw;
 }
 
 .navbar-collapse.in{
