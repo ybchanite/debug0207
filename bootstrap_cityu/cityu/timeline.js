@@ -105,7 +105,7 @@ else if(jQuery('#block-views-block-doctorate-atimeline-block-2').length){
 }
 
 
-
+/*
 
 if (!(sidebar === null)){
 
@@ -126,4 +126,4 @@ if (!(sidebar === null)){
     });
     
 }
-
+*/
