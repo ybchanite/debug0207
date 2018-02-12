@@ -111,12 +111,13 @@ if (!(sidebar === null)){
     var offset = sidebar.offset();
     jQuery(document).scroll(function() {
         if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
-            if (jQuery(document).scrollTop() > offset.top) {
-                sidebar.stop().clearQueue().animate({
-                    marginTop: jQuery(document).scrollTop() - offset.top + 200
+            sidebar.stop().clearQueue();
+            if (jQuery(window).scrollTop() > offset.top) {
+                sidebar.animate({
+                    marginTop: jQuery(window).scrollTop() - offset.top + 200
                 });
             } else {
-                sidebar.stop().clearQueue().animate({
+                sidebar.animate({
                     marginTop: 0
                  });
             }
