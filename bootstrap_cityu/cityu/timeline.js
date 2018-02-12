@@ -109,11 +109,11 @@ else if(jQuery('#block-views-block-doctorate-atimeline-block-2').length){
 
 if (!(sidebar === null)){
     var offset = sidebar.offset();
-    jQuery(window).scroll(function() {
+    jQuery(document).scroll(function() {
         if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
-            if (jQuery(window).scrollTop() > offset.top) {
+            if (jQuery(document).scrollTop() > offset.top) {
                 sidebar.stop().clearQueue().animate({
-                    marginTop: jQuery(window).scrollTop() - offset.top + 200
+                    marginTop: jQuery(document).scrollTop() - offset.top + 200
                 });
             } else {
                 sidebar.stop().clearQueue().animate({
