@@ -112,7 +112,7 @@ if (!(sidebar === null)){
         if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
             var offset = sidebar.offset().top;
             sidebar.stop().clearQueue();
-            alert(jQuery(window).scrollTop() > offset);
+            console.log(jQuery(window).scrollTop() > offset);
             if (jQuery(window).scrollTop() > offset) {
                 console.log(jQuery(window).scrollTop());
                 console.log('' + offset);
