@@ -97,5 +97,5 @@ jQuery(window).on('scroll', function() {
                 sidebar.css('margin-top', 0);
             }  
     }
-}
+});
 
