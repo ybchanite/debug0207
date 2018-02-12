@@ -111,13 +111,14 @@ if (!(sidebar === null)){
     jQuery(window).on('scroll', function() {
         if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
             var offset = sidebar.offset().top;
+            var windowHeight = jQuery(window).scrollTop();
             sidebar.stop().clearQueue();
-            console.log(jQuery(window).scrollTop() > offset);
-            if (jQuery(window).scrollTop() > offset) {
-                console.log(jQuery(window).scrollTop());
+            console.log( windowHeight > offset);
+            if (windowHeight > offset) {
+                console.log(windowHeight);
                 console.log('' + offset);
                 sidebar.animate({
-                    marginTop: jQuery(window).scrollTop() - offset + 200
+                    marginTop: windowHeight - offset + 200
                 });
             } else {
                 sidebar.animate({
