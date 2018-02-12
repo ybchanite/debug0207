@@ -113,11 +113,14 @@ if (!(sidebar === null)){
             var offset = sidebar.offset().top;
             sidebar.stop().clearQueue();
             if (jQuery(window).scrollTop() > offset) {
+                console.log(jQuery(window).scrollTop());
+                console.log('' + offset);
                 sidebar.animate({
                     marginTop: jQuery(window).scrollTop() - offset + 200
                 }, 400);
             } else {
                 sidebar.animate({
+                    console.log(0);
                     marginTop: 0
                  }, 400);
             }
