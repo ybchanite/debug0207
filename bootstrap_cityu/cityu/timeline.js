@@ -1,5 +1,3 @@
-
-
 jQuery('<div id="leftPin" class="pin"></div>').insertAfter(jQuery('li.timeline-item.odd .field-content.at-step'));
 jQuery('<div id="rightPin" class="pin"></div>').insertAfter(jQuery('li.timeline-item.even .field-content.at-step'));
 
@@ -37,6 +35,30 @@ jQuery(".timeline-marker, h3.at-step").mouseenter(
         jQuery(".views-field-field-at-info").not(timeline_marker.siblings()).css("display", "none");
     }           
 );
+
+
+
+//jQuery(".timeline-item-wrapper .views-field.views-field-field-at-step").mouseenter(
+//    function() { 
+//        
+//
+//        if (jQuery(this).siblings(".views-field-field-at-info").css("display") === "none"){
+//            
+//            jQuery(this).siblings(".views-field-field-at-step").find('.pin').animate({width: '95%'}, 'fast');             
+//            jQuery(this).siblings(".timeline-marker").css("background-color", "#883277");
+//            jQuery(this).siblings(".views-field-field-at-step").find('.at-step').css('color', '#883277');
+//            
+//            jQuery(".timeline-marker").not(jQuery(this).siblings()).css("background-color", "#caa0bf");
+//            jQuery('.pin').not(jQuery(this).siblings(".views-field-field-at-step").find('.pin')).animate({width: '25%'}, 'fast');    
+//            jQuery('.at-step').not(jQuery(this).siblings(".views-field-field-at-step").find('.at-step')).css('color', '#808285');   
+//            jQuery(this).siblings(".views-field-field-at-info").fadeIn('slow');
+//
+//   
+//   
+//        }
+//        jQuery(".views-field-field-at-info").not(jQuery(this).siblings()).css("display", "none");
+//    }           
+//);
 
 
 
@@ -82,18 +104,23 @@ else if(jQuery('#block-views-block-doctorate-atimeline-block-2').length){
 
 
 
-jQuery(window).on('scroll', function() {
-    if (!(sidebar === null) && jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
 
-            var offset = sidebar.offset().top;
-            var windowHeight = jQuery(window).scrollTop();
-            sidebar.stop().clearQueue();
-            console.log( windowHeight > offset);
-            if (windowHeight > offset) {
-                sidebar.css('margin-top', '+=300px');
+if (!(sidebar === null)){
+
+    var offset = sidebar.offset();
+
+    jQuery(window).scroll(function() {
+        if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
+            if (jQuery(window).scrollTop() > offset.top) {
+                sidebar.stop().animate({
+                    marginTop: jQuery(window).scrollTop() - offset.top + 200
+                });
             } else {
-                sidebar.css('margin-top', 0);
-            }  
-    }
-});
-
+                sidebar.stop().animate({
+                    marginTop: 0
+                 });
+            }
+        }
+    });
+    
+}
