@@ -82,9 +82,9 @@ else if(jQuery('#block-views-block-doctorate-atimeline-block-2').length){
 
 
 
+jQuery(window).on('scroll', function() {
+    if (!(sidebar === null) && jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
 
-if (!(sidebar === null) && jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
-    jQuery(window).on('scroll', function() {
             var offset = sidebar.offset().top;
             var windowHeight = jQuery(window).scrollTop();
             sidebar.stop().clearQueue();
@@ -95,8 +95,7 @@ if (!(sidebar === null) && jQuery('.timeline-item-wrapper .views-field-field-at-
                 sidebar.css('margin-top', windowHeight - offset + 200);
             } else {
                 sidebar.css('margin-top', 0);
-            }
-    });
-    
+            }  
+    }
 }
 
