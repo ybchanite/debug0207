@@ -117,13 +117,9 @@ if (!(sidebar === null)){
             if (windowHeight > offset) {
                 console.log(windowHeight);
                 console.log('' + offset);
-                sidebar.animate({
-                    marginTop: windowHeight - offset + 200
-                });
+                sidebar.css('margin-top', windowHeight - offset + 200);
             } else {
-                sidebar.animate({
-                    marginTop: 0
-                 });
+                sidebar.css('margin-top', 0);
             }
         }
     });
