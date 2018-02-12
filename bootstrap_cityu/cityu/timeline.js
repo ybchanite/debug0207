@@ -90,9 +90,7 @@ jQuery(window).on('scroll', function() {
             sidebar.stop().clearQueue();
             console.log( windowHeight > offset);
             if (windowHeight > offset) {
-                console.log(windowHeight);
-                console.log('' + offset);
-                sidebar.css('margin-top', windowHeight - offset + 200);
+                sidebar.css('margin-top', '+=300px');
             } else {
                 sidebar.css('margin-top', 0);
             }  
