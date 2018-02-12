@@ -113,18 +113,14 @@ if (!(sidebar === null)){
 
     jQuery(window).scroll(function() {
         if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
-            if (jQuery(window).scrollTop() + 50 > offset.top) {
-                /*sidebar.stop().animate({
+            if (jQuery(window).scrollTop() > offset.top) {
+                sidebar.stop().animate({
                     marginTop: jQuery(window).scrollTop() - offset.top + 200
-                });*/
-                sidebar.css('position', 'fixed').css('top', '100px');
+                });
             } else {
-                /*
                 sidebar.stop().animate({
                     marginTop: 0
                  });
-                 */
-                sidebar.css('position', 'relative').css('top', 'initial');
             }
         }
     });
