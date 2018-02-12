@@ -119,8 +119,8 @@ if (!(sidebar === null)){
                     marginTop: jQuery(window).scrollTop() - offset + 200
                 }, 400);
             } else {
+                console.log(0);
                 sidebar.animate({
-                    console.log(0);
                     marginTop: 0
                  }, 400);
             }
