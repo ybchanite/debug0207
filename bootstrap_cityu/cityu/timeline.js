@@ -83,11 +83,10 @@ else if(jQuery('#block-views-block-doctorate-atimeline-block-2').length){
 
 
 
-if (!(sidebar === null)){
+if (!(sidebar === null) && jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
     jQuery(window).on('scroll', function() {
-        if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
             var offset = sidebar.offset().top;
-            var windowHeight = jQuery('html').scrollTop();
+            var windowHeight = jQuery(window).scrollTop();
             sidebar.stop().clearQueue();
             console.log( windowHeight > offset);
             if (windowHeight > offset) {
@@ -97,7 +96,6 @@ if (!(sidebar === null)){
             } else {
                 sidebar.css('margin-top', 0);
             }
-        }
     });
     
 }
