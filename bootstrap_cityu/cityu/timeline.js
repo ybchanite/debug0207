@@ -108,10 +108,8 @@ else if(jQuery('#block-views-block-doctorate-atimeline-block-2').length){
 
 
 if (!(sidebar === null)){
-
-    var offset = sidebar.offset();
-
     jQuery(window).scroll(function() {
+        var offset = sidebar.offset();
         if (jQuery('.timeline-item-wrapper .views-field-field-at-info').css('position') === 'absolute'){
             if (jQuery(window).scrollTop() > offset.top) {
                 sidebar.stop().animate({
