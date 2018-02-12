@@ -115,11 +115,11 @@ if (!(sidebar === null)){
             if (jQuery(window).scrollTop() > offset) {
                 sidebar.animate({
                     marginTop: jQuery(window).scrollTop() - offset + 200
-                });
+                }, 400);
             } else {
                 sidebar.animate({
                     marginTop: 0
-                 });
+                 }, 400);
             }
         }
     });
