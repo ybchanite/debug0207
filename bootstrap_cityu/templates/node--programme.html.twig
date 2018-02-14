@@ -105,17 +105,22 @@
 </tbody>
 </table>
  
- <div class="prog_outline_anchor">
-	<h3>Programme Outlines</h3>
-	
-	{{ node.field_outline | length }}
-  	{% for item in content.field_outline %}
-    	  <a>{{ item.entity.field_outline_title.entity.name.value }}</a>
-  	{% endfor %}
-
-</div>
  
 </div>
+
+ <div class="prog_outline_anchor">
+	<h3>Programme Outlines</h3>
+	{% set count1 = node.field_outline | length %}
+  	{% for i in 0..count1-1 %}
+    		<a>{{ node.field_outline[i].entity.field_outline_title.entity.name.value }}</a>
+  	{% endfor %}
+	
+	{% for item in node.field_outline %}
+		{{ item.entity.field_outline_title.entity.name.value }}
+	{% endfor %}
+
+</div>
+
 <div class="prog_remark">
 	{{ content.field_remark }}
 
