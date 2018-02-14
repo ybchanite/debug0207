@@ -110,14 +110,11 @@
 
  <div class="prog_outline_anchor">
 	<h3>Programme Outlines</h3>
-	{% set count1 = node.field_outline | length %}
-  	{% for i in 0..count1-1 %}
-    		<a>{{ node.field_outline[i].entity.field_outline_title.entity.name.value }}</a>
-  	{% endfor %}
-	
-	{% for item in node.field_outline %}
-		{{ item.entity.field_outline_title.entity.name.value }}
-	{% endfor %}
+	<ul>
+	    {% for item in node.field_outline %}
+			<li><a>{{ item.entity.field_outline_title.entity.name.value }}</a></li>
+	    {% endfor %}
+	</ul>
 
 </div>
 
